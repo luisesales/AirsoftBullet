@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -15,19 +16,33 @@ public class PlayerController : MonoBehaviour
     private float groundDrag;
 
     private bool grounded;
+    private Transform selectedGunPosition;
 
     [SerializeField]
     private Transform orientation;
+    private bool inCollectRange = false;
+
+
+
+    // Input variables
 
     private float horizontalInput;
     private float verticalInput;
     private Vector3 moveDirection;
     private Rigidbody rb;
+    private GameObject selectedGun;
+    private GameObject inRangeGun;
+
+    private GameObject canvas;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true; // Prevent physics from rotating the player        
+        selectedGunPosition = GameObject.FindWithTag("GunPos").transform;        
+        canvas = GameObject.FindWithTag("Canvas");
+        canvas.SetActive(false);
     }
 
     private void Update()
@@ -38,7 +53,12 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-
+        if (inCollectRange && Input.GetKeyDown(KeyCode.E))
+        {
+            collectGun(inRangeGun);
+            inCollectRange = false;
+            canvas.SetActive(false);
+        }
         // Cria um vetor de velocidade 2D (plano) a partir da velocidade do Rigidbody
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
@@ -60,7 +80,7 @@ public class PlayerController : MonoBehaviour
             rb.drag = 0; // No linearDamping when in the air
         }
     }
-    
+
     private void FixedUpdate()
     {
         // Calculate the move direction based on input and orientation
@@ -70,5 +90,39 @@ public class PlayerController : MonoBehaviour
         // Apply the movement force
         rb.AddForce(moveDirection * speed * 10f, ForceMode.Acceleration);
     }
-   
+
+    public void collectGun(GameObject newGun)
+    {
+        if (selectedGun != null)
+        {
+            Destroy(selectedGun); // Destroy the old selectedGun if it exists
+        }
+        selectedGun = newGun; // Assign the new selectedGun 
+        GameObject camera = GameObject.FindWithTag("MainCamera");       
+        selectedGun.transform.SetParent(camera.transform); // Set the selectedGun as a child of the player        
+        selectedGun.transform.position = selectedGunPosition.position; // Reset position relative to player
+        selectedGun.transform.rotation = selectedGunPosition.rotation;
+        selectedGun.GetComponent<GunController>().SelectGun(); // Call the SelectGun method to activate it
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Weapon") && collision.gameObject != selectedGun)
+        {
+            canvas.SetActive(true);
+            inCollectRange = true;
+            inRangeGun = collision.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider collision)
+    {
+        Debug.Log("OnTriggerExit: " + collision.gameObject.name);
+        if (collision.gameObject.CompareTag("Weapon"))
+        {
+            canvas.SetActive(false);
+            inCollectRange = false;
+            inRangeGun = null;
+        }
+    }
 }

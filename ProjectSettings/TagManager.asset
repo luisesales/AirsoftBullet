@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - CameraPos
+  - Weapon
+  - Canvas
+  - GunPos
   layers:
   - Default
   - TransparentFX

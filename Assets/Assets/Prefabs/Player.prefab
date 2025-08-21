@@ -252,5 +252,5 @@ MonoBehaviour:
   isGround:
     serializedVersion: 2
     m_Bits: 8
-  groundDrag: 5
+  groundDrag: 10
   orientation: {fileID: 700976888010004397}
