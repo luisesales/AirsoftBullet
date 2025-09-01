@@ -51,9 +51,14 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
         currentCooldown = fireCooldown;
     }
-    
+
     public void SelectGun()
     {
-        isSelected = true;        
+        isSelected = true;  
+        foreach (Transform child in transform)
+        {
+            if (child.gameObject.GetComponent<Collider>() != null)
+            child.gameObject.GetComponent<Collider>().enabled = false;
+        }      
     }
 }
