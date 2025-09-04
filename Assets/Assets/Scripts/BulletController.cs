@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,13 @@ public class BulletController : MonoBehaviour
     private Rigidbody rb;
 
     [SerializeField]
-    private float backspin = .02f;
+    private float backspin;
+    float radius;
     private LineRenderer lineRenderer;
     private List<Vector3> pathPoints = new List<Vector3>();
 
     private float Initialvelocity = 10f;
+    private float airDensity = 1.225f; // kg/m^3 at sea level
 
     void Awake()
     {
@@ -28,8 +31,10 @@ public class BulletController : MonoBehaviour
     }
     void Start()
     {
+        radius = GetComponent<SphereCollider>().radius;
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * Initialvelocity, ForceMode.VelocityChange);
+        //rb.AddForce(transform.forward * Initialvelocity, ForceMode.VelocityChange);
+        rb.AddForce(transform.up * airDensity);
 
     }
 
@@ -47,12 +52,15 @@ public class BulletController : MonoBehaviour
 
 
         Debug.Log(rb.velocity.magnitude);
-        Vector3 magnusDirection = Vector3.Cross(rb.angularVelocity, rb.velocity).normalized;
-
-        // float magnusMagnitude = (4f / 3f) * Mathf.PI * airDensity * Mathf.Pow(ballRadius, 3) * 
-        //                             Vector3.Cross(rb.angularVelocity, rb.velocity).magnitude;
-        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin * Time.fixedDeltaTime;
+        /*
+        Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
+        float magnusMagnitude = 0.5f  * backspin; // * airDensity  * Mathf.Pow(radius, 2) * Mathf.PI 
+        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * Time.fixedDeltaTime;
+        */
+        Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
         
+        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin * Time.fixedDeltaTime;
+
         rb.AddForce(magnusForce);
     }
     void OnCollisionEnter(Collision collision)
