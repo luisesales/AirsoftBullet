@@ -9,12 +9,16 @@ public class BulletController : MonoBehaviour
 
     [SerializeField]
     private float backspin;
-    float radius;
+    float radius = 0.003f;
     private LineRenderer lineRenderer;
     private List<Vector3> pathPoints = new List<Vector3>();
 
-    private float Initialvelocity = 10f;
+    private float speed = 100f;
     private float airDensity = 1.225f; // kg/m^3 at sea level
+    
+    private float dragCoefficient = 0.47f; // Typical value for a sphere
+
+    private double magnusCoefficient = 0.000013;
 
     void Awake()
     {
@@ -31,11 +35,11 @@ public class BulletController : MonoBehaviour
     }
     void Start()
     {
-        radius = GetComponent<SphereCollider>().radius;
-        rb = GetComponent<Rigidbody>();
-        //rb.AddForce(transform.forward * Initialvelocity, ForceMode.VelocityChange);
-        rb.AddForce(transform.up * airDensity);
 
+        rb = GetComponent<Rigidbody>();
+        rb.AddForce(transform.up.normalized * speed * rb.mass + -transform.forward * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);
+        //rb.AddForce(transform.up * speed * rb.mass * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);        
+        Destroy(gameObject, 6f);
     }
 
     void Update()
@@ -52,24 +56,26 @@ public class BulletController : MonoBehaviour
 
 
         Debug.Log(rb.velocity.magnitude);
-        /*
+
+
+
+        Vector3 dragDirection = -rb.velocity.normalized;
+        Vector3 dragForce = 0.5f * airDensity * Mathf.Pow(rb.velocity.magnitude, 2) * dragCoefficient * Mathf.PI * Mathf.Pow(radius, 2) * dragDirection;
+        rb.AddForce(dragForce, ForceMode.Force);
+
+        // Vector3 magnusDirection = Vector3.Cross(rb.angularVelocity, rb.velocity).normalized;
         Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
-        float magnusMagnitude = 0.5f  * backspin; // * airDensity  * Mathf.Pow(radius, 2) * Mathf.PI 
-        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * Time.fixedDeltaTime;
-        */
-        Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
+        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin;  
+
+
+        // Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
+        // float magnusMagnitude = 0.5f * backspin * airDensity * Mathf.Pow(radius, 2) * Mathf.PI * magnusCoefficient;
+        // Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * magnusMagnitude * Time.fixedDeltaTime;
+
+        // Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
+        // Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin * Time.fixedDeltaTime;
         
-        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin * Time.fixedDeltaTime;
+        rb.AddForce(magnusForce, ForceMode.Force);
 
-        rb.AddForce(magnusForce);
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        Destroy(gameObject, 2f);
-    }
-
-    public void SetInitialVelocity(float velocity)
-    {
-        Initialvelocity = velocity;
     }
 }

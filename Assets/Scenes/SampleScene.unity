@@ -783,11 +783,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2005071634651198308, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.497
       objectReference: {fileID: 0}
     - target: {fileID: 2005071634651198308, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 2005071634651198308, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
       propertyPath: m_LocalRotation.w
@@ -820,10 +820,6 @@ PrefabInstance:
     - target: {fileID: 2944576728798232045, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
       propertyPath: m_Name
       value: Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7088731401698501868, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
-      propertyPath: m_Mass
-      value: 0.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
