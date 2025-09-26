@@ -7,19 +7,29 @@ public class GunController : MonoBehaviour
     [SerializeField]
     private GameObject bulletPrefab;
     private Transform bulletHole;
+    
+    private float fireCooldown;
 
-    public float fireCooldown { get; private set; }
+    [SerializeField]
+    private float fireRate;
 
-    public float fireRate { get; private set; }
+    [SerializeField]
+    private bool isAutomatic;
+    private bool automatic;
 
-    public bool isAutomatic { get; private set; }
+    private int magazineSize;
+
+    [SerializeField]
+    private int ammoCount;
 
     private bool isSelected = false;
 
     private float currentCooldown;
     void Start()
     {
-        currentCooldown = fireCooldown;
+        fireCooldown = 1f / fireRate;
+        automatic = isAutomatic;
+        magazineSize = ammoCount;        
         bulletHole = transform.Find("BulletHole");
     }
 
@@ -30,17 +40,25 @@ public class GunController : MonoBehaviour
         {
             if (isAutomatic)
             {
-                if (Input.GetButton("Fire1") && currentCooldown <= 0f)
+                if (Input.GetButton("Fire1") && currentCooldown <= 0f && ammoCount > 0)
                 {
                     Shoot();
                 }
             }
             else
             {
-                if (Input.GetButtonDown("Fire1") && currentCooldown <= 0f)
+                if (Input.GetButtonDown("Fire1") && currentCooldown <= 0f && ammoCount > 0)
                 {
                     Shoot();
                 }
+            }
+            if (Input.GetButton("Reload") && ammoCount < magazineSize && currentCooldown <= 0f)
+            {
+                Reload();
+            }
+            if(Input.GetButtonDown("F") && automatic)
+            {
+                SwitchMode();
             }
             currentCooldown -= Time.deltaTime;
         }
@@ -49,16 +67,27 @@ public class GunController : MonoBehaviour
     private void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
-        currentCooldown = fireCooldown;
+        currentCooldown = isAutomatic? 0f : fireCooldown;
+        ammoCount--;
+    }
+
+    private void Reload()
+    {
+        currentCooldown = 5f;
+        ammoCount = magazineSize;
     }
 
     public void SelectGun()
     {
-        isSelected = true;  
+        isSelected = true;
         foreach (Transform child in transform)
         {
             if (child.gameObject.GetComponent<Collider>() != null)
-            child.gameObject.GetComponent<Collider>().enabled = false;
-        }      
+                child.gameObject.GetComponent<Collider>().enabled = false;
+        }
+    }
+    public void SwitchMode()
+    {
+        isAutomatic = !isAutomatic;        
     }
 }

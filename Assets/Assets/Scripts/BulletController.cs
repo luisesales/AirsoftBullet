@@ -8,7 +8,7 @@ public class BulletController : MonoBehaviour
     private Rigidbody rb;
 
     [SerializeField]
-    private float backspin;
+    private float backspin = 0.0001f;
     float radius = 0.003f;
     private LineRenderer lineRenderer;
     private List<Vector3> pathPoints = new List<Vector3>();
