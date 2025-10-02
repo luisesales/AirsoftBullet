@@ -243,7 +243,7 @@ Transform:
   m_GameObject: {fileID: 4686768827199094449}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1416, z: 0.2867}
+  m_LocalPosition: {x: 0, y: 0.1416, z: 0.2663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -299,8 +299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2944576728798232045, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
-  fireRate: 5
-  isAutomatic: 1
+  fireRate: 1
+  isAutomatic: 0
   ammoCount: 15
 --- !u!65 &2700780861518789814
 BoxCollider:

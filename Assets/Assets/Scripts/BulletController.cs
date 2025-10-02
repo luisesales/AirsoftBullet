@@ -55,7 +55,7 @@ public class BulletController : MonoBehaviour
     {
 
 
-        Debug.Log(rb.velocity.magnitude);
+        //Debug.Log(rb.velocity.magnitude);
 
 
 

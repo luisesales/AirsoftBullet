@@ -56,7 +56,7 @@ public class GunController : MonoBehaviour
             {
                 Reload();
             }
-            if(Input.GetButtonDown("F") && automatic)
+            if(Input.GetButtonDown("SwitchMode") && automatic)
             {
                 SwitchMode();
             }
@@ -67,12 +67,13 @@ public class GunController : MonoBehaviour
     private void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
-        currentCooldown = isAutomatic? 0f : fireCooldown;
+        currentCooldown = fireCooldown;
         ammoCount--;
     }
 
     private void Reload()
     {
+        Debug.Log("Reloading");
         currentCooldown = 5f;
         ammoCount = magazineSize;
     }
