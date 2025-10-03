@@ -31,7 +31,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection;
     private Rigidbody rb;
     private GameObject selectedGun;
-    private GameObject inRangeGun;
+    private GameObject inRangeCollectable;
+    private bool inRangeGun;
 
     private GameObject canvas;
 
@@ -55,7 +56,14 @@ public class PlayerController : MonoBehaviour
 
         if (inCollectRange && Input.GetKeyDown(KeyCode.E))
         {
-            collectGun(inRangeGun);
+            if (inRangeGun)
+            {
+                collectGun(inRangeCollectable);
+            }
+            else
+            {
+                collectMagazine(inRangeCollectable);
+            }
             inCollectRange = false;
             canvas.SetActive(false);
         }
@@ -98,31 +106,43 @@ public class PlayerController : MonoBehaviour
             Destroy(selectedGun); // Destroy the old selectedGun if it exists
         }
         selectedGun = newGun; // Assign the new selectedGun 
-        GameObject camera = GameObject.FindWithTag("MainCamera");       
+        GameObject camera = Camera.main.gameObject;       
         selectedGun.transform.SetParent(camera.transform); // Set the selectedGun as a child of the player        
         selectedGun.transform.position = selectedGunPosition.position; // Reset position relative to player
         selectedGun.transform.rotation = selectedGunPosition.rotation;
         selectedGun.GetComponent<GunController>().SelectGun(); // Call the SelectGun method to activate it
     }
 
+    public void collectMagazine(GameObject magazine)
+    {
+        if (selectedGun != null)
+        {
+            selectedGun.GetComponent<GunController>().CollectAmmo(1);
+            Destroy(magazine);
+        }
+    }
+
     void OnTriggerEnter(Collider collision)
     {
         Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Weapon") && collision.gameObject != selectedGun)
+        inRangeGun = collision.gameObject.CompareTag("Weapon");        
+        if ((inRangeGun && collision.gameObject != selectedGun) || (collision.gameObject.CompareTag("Magazine") && selectedGun != null))
         {
             canvas.SetActive(true);
+            canvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
             inCollectRange = true;
-            inRangeGun = collision.gameObject;
+            inRangeCollectable = collision.gameObject;
         }
+        
     }
     void OnTriggerExit(Collider collision)
     {
         Debug.Log("OnTriggerExit: " + collision.gameObject.name);
-        if (collision.gameObject.CompareTag("Weapon"))
+        inRangeGun = collision.gameObject.CompareTag("Weapon");
+        if (inRangeGun || collision.gameObject.CompareTag("Magazine"))
         {
             canvas.SetActive(false);
-            inCollectRange = false;
-            inRangeGun = null;
-        }
+            inCollectRange = false;            
+        }        
     }
 }

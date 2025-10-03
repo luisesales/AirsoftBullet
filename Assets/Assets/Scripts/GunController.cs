@@ -7,7 +7,7 @@ public class GunController : MonoBehaviour
     [SerializeField]
     private GameObject bulletPrefab;
     private Transform bulletHole;
-    
+
     private float fireCooldown;
 
     [SerializeField]
@@ -22,6 +22,12 @@ public class GunController : MonoBehaviour
     [SerializeField]
     private int ammoCount;
 
+    [SerializeField]
+    private int magazineAmount;
+
+    private int maxMagazineAmount;
+
+
     private bool isSelected = false;
 
     private float currentCooldown;
@@ -29,7 +35,8 @@ public class GunController : MonoBehaviour
     {
         fireCooldown = 1f / fireRate;
         automatic = isAutomatic;
-        magazineSize = ammoCount;        
+        magazineSize = ammoCount;
+        maxMagazineAmount = magazineAmount;
         bulletHole = transform.Find("BulletHole");
     }
 
@@ -56,7 +63,7 @@ public class GunController : MonoBehaviour
             {
                 Reload();
             }
-            if(Input.GetButtonDown("SwitchMode") && automatic)
+            if (Input.GetButtonDown("SwitchMode") && automatic)
             {
                 SwitchMode();
             }
@@ -73,9 +80,15 @@ public class GunController : MonoBehaviour
 
     private void Reload()
     {
+        if (magazineAmount <= 0)
+        {
+            Debug.Log("No magazines left");
+            return;
+        }
         Debug.Log("Reloading");
         currentCooldown = 5f;
         ammoCount = magazineSize;
+        magazineAmount--;
     }
 
     public void SelectGun()
@@ -89,6 +102,12 @@ public class GunController : MonoBehaviour
     }
     public void SwitchMode()
     {
-        isAutomatic = !isAutomatic;        
+        isAutomatic = !isAutomatic;
     }
+
+    public void CollectAmmo(int amount)
+    {
+        magazineAmount = Mathf.Min(magazineAmount + amount, maxMagazineAmount);
+    }
+    
 }

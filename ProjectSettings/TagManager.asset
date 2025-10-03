@@ -8,6 +8,7 @@ TagManager:
   - Weapon
   - Canvas
   - GunPos
+  - Magazine
   layers:
   - Default
   - TransparentFX

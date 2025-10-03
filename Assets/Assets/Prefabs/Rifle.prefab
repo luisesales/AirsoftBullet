@@ -55,6 +55,7 @@ MonoBehaviour:
   fireRate: 5
   isAutomatic: 1
   ammoCount: 30
+  magazineAmount: 5
 --- !u!65 &3551372668792437818
 BoxCollider:
   m_ObjectHideFlags: 0
