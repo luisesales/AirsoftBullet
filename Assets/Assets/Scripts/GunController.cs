@@ -5,32 +5,32 @@ using System.Collections;
 public class GunController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject bulletPrefab;
-    private Transform bulletHole;
+    protected GameObject bulletPrefab;
+    protected Transform bulletHole;
 
-    private float fireCooldown;
-
-    [SerializeField]
-    private float fireRate;
+    protected float fireCooldown;
 
     [SerializeField]
-    private bool isAutomatic;
-    private bool automatic;
-
-    private int magazineSize;
+    protected float fireRate;
 
     [SerializeField]
-    private int ammoCount;
+    protected bool isAutomatic;
+    protected bool automatic;
+
+    protected int magazineSize;
 
     [SerializeField]
-    private int magazineAmount;
+    protected int ammoCount;
 
-    private int maxMagazineAmount;
+    [SerializeField]
+    protected int magazineAmount;
+
+    protected int maxMagazineAmount;
 
 
-    private bool isSelected = false;
+    protected bool isSelected = false;
 
-    private float currentCooldown;
+    protected float currentCooldown;
     void Start()
     {
         fireCooldown = 1f / fireRate;
@@ -71,14 +71,14 @@ public class GunController : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    protected virtual void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
         currentCooldown = fireCooldown;
         ammoCount--;
     }
 
-    private void Reload()
+    protected void Reload()
     {
         if (magazineAmount <= 0)
         {
