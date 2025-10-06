@@ -10,6 +10,7 @@ TagManager:
   - GunPos
   - Magazine
   - TargetSpawn
+  - Target
   layers:
   - Default
   - TransparentFX

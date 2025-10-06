@@ -15,7 +15,7 @@ public class BulletController : MonoBehaviour
 
     private float speed = 100f;
     private float airDensity = 1.225f; // kg/m^3 at sea level
-    
+
     private float dragCoefficient = 0.47f; // Typical value for a sphere
 
     private double magnusCoefficient = 0.000013;
@@ -65,7 +65,7 @@ public class BulletController : MonoBehaviour
 
         // Vector3 magnusDirection = Vector3.Cross(rb.angularVelocity, rb.velocity).normalized;
         Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
-        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin;  
+        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin;
 
 
         // Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
@@ -74,8 +74,19 @@ public class BulletController : MonoBehaviour
 
         // Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
         // Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin * Time.fixedDeltaTime;
-        
+
         rb.AddForce(magnusForce, ForceMode.Force);
 
+    }
+    
+    void OnTriggerEnter(Collider collision)
+    {
+        Debug.Log("OnTriggerEnter: " + collision.gameObject.name);        
+        if (collision.gameObject.CompareTag("Target"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        
     }
 }
