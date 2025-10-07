@@ -81,11 +81,12 @@ public class BulletController : MonoBehaviour
     
     void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("OnTriggerEnter: " + collision.gameObject.name);        
+        Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Target"))
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            GameController.Instance.UpdatePoints(1);
         }
         
     }

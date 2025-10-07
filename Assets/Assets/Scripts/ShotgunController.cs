@@ -22,5 +22,6 @@ public class ShotgunSpread : GunController
             currentCooldown = fireCooldown;
         }
         ammoCount--;
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
     }
 }

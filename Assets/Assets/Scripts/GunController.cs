@@ -76,6 +76,7 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
         currentCooldown = fireCooldown;
         ammoCount--;
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
     }
 
     protected void Reload()
@@ -89,6 +90,8 @@ public class GunController : MonoBehaviour
         currentCooldown = 5f;
         ammoCount = magazineSize;
         magazineAmount--;
+        GameController.Instance.StartTimer(currentCooldown);
+        Invoke("FinishReload", currentCooldown);
     }
 
     public void SelectGun()
@@ -99,6 +102,7 @@ public class GunController : MonoBehaviour
             if (child.gameObject.GetComponent<Collider>() != null)
                 child.gameObject.GetComponent<Collider>().enabled = false;
         }
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
     }
     public void SwitchMode()
     {
@@ -108,6 +112,12 @@ public class GunController : MonoBehaviour
     public void CollectAmmo(int amount)
     {
         magazineAmount = Mathf.Min(magazineAmount + amount, maxMagazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+    }
+
+    private void FinishReload()
+    {
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
     }
     
 }

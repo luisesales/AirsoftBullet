@@ -6,11 +6,12 @@ TagManager:
   tags:
   - CameraPos
   - Weapon
-  - Canvas
   - GunPos
   - Magazine
   - TargetSpawn
   - Target
+  - ProximityCanvas
+  - HUDCanvas
   layers:
   - Default
   - TransparentFX
