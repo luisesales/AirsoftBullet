@@ -12,6 +12,7 @@ TagManager:
   - Target
   - ProximityCanvas
   - HUDCanvas
+  - TheWall
   layers:
   - Default
   - TransparentFX

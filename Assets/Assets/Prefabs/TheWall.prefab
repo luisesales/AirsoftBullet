@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3570609721315750360}
   m_Layer: 0
   m_Name: TheWall
-  m_TagString: Untagged
+  m_TagString: TheWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPrefab: {fileID: 8541892771061845632, guid: df9d6de4afbccea47843af2e822e3277, type: 3}
+  maxTargets: 5
   cooldown: 1
 --- !u!1001 &195441896277945155
 PrefabInstance:
