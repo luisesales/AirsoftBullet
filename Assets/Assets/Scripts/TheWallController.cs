@@ -83,7 +83,7 @@ public class TheWallController : MonoBehaviour
         }
 
     }
-    public void SpawnTarget()
+    private void SpawnTarget()
     {
         if (spawnedTargets.Count >= maxTargets)
         {
