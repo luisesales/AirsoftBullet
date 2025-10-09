@@ -23,6 +23,8 @@ public class TheWallController : MonoBehaviour
     private float reshuffleThreshold = 0.2f; // 20% restante
     private bool preparingNext = false;
 
+    private bool canContinue = true;
+
     public Vector3 GetNextSpawnPoint()
     {
         if (activeQueue.Count == 0) SwapQueues();
@@ -64,7 +66,7 @@ public class TheWallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cooldown <= 0f)
+        if (cooldown <= 0f )
         {
             if (activeQueue.Count == 0)
             {
@@ -75,7 +77,11 @@ public class TheWallController : MonoBehaviour
                 StartCoroutine(PrepareNextQueue());
             }
             cooldown = spawnRate;
-            SpawnTarget();
+
+            if(canContinue)
+            {
+                SpawnTarget();
+            }
         }
         else
         {
@@ -96,7 +102,26 @@ public class TheWallController : MonoBehaviour
     public void DestroyTarget(GameObject target)
     {
         spawnedTargets.Remove(target);
-        Destroy(target);        
-    }    
+        Destroy(target);
+    }
+
+    public void DestroyAllTarget()
+    {
+        foreach (var target in spawnedTargets)
+        {
+            spawnedTargets.Remove(target);
+            Destroy(target);
+        }
+    }
+
+    public void SetMaxTarget(int maxTargets)
+    {
+        this.maxTargets = maxTargets;
+    }
+    
+    public void SetCanContinue(bool canContinue)
+    {
+        this.canContinue = canContinue;
+    }
 
 }

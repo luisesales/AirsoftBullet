@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class GameController : MonoBehaviour
     private TMPro.TextMeshProUGUI timer;
     private TMPro.TextMeshProUGUI ammo;
     private TMPro.TextMeshProUGUI points;
-    private float time;
+    private TMPro.TextMeshProUGUI countdownTime;
+    private float time, remainderTime;
+    [SerializeField] 
+    private float countdownTimer;
 
     private int pointsCount;
 
@@ -45,6 +49,21 @@ public class GameController : MonoBehaviour
             timer.gameObject.SetActive(false);
         }
 
+        if(remainderTime >= 0)
+        {
+            int minuts = (int)remainderTime / 60;
+            int seconds = (int)remainderTime % 60;
+            if (seconds < 10)
+            {
+                countdownTime.text = $"{minuts}:0{seconds}";
+            }
+            else
+            {
+                countdownTime.text = $"{minuts}:{seconds}";
+            }
+            
+        }
+
     }
 
     private void StartHudCanvas()
@@ -54,6 +73,7 @@ public class GameController : MonoBehaviour
         timer.gameObject.SetActive(false);
         ammo = hudCanvas.transform.Find("Ammo").GetComponent<TMPro.TextMeshProUGUI>();
         points = hudCanvas.transform.Find("Points").GetComponent<TMPro.TextMeshProUGUI>();
+        countdownTime = hudCanvas.transform.Find("CountdownTimer").GetComponent<TMPro.TextMeshProUGUI>();
         time = 0f;
     }
     private void StartGame()
@@ -61,7 +81,8 @@ public class GameController : MonoBehaviour
         StartHudCanvas();
         pointsCount = 0;
         //UpdatePoints(pointsCount);
-        theWall = GameObject.FindWithTag("TheWall").GetComponent<TheWallController>();        
+        theWall = GameObject.FindWithTag("TheWall").GetComponent<TheWallController>();
+        StartCoroutine(CountdownTimer(countdownTimer));        
     }
 
     public void StartTimer(float time)
@@ -74,6 +95,25 @@ public class GameController : MonoBehaviour
         this.time = time;
     }
 
+    public void StartCountdownTimer(float time)
+    {
+        if (hudCanvas == null)
+        {
+            StartHudCanvas();
+        }
+        countdownTime.gameObject.SetActive(true);
+        this.time = time;
+    }
+
+    public void UpdateCountdownTimer(int currentAmmo, int magazineSize, int magazineAmount)
+    {
+        if (hudCanvas == null)
+        {
+            StartHudCanvas();
+        }
+        ammo.text = currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
+    }
+
     public void UpdateAmmoCount(int currentAmmo, int magazineSize, int magazineAmount)
     {
         if (hudCanvas == null)
@@ -84,9 +124,9 @@ public class GameController : MonoBehaviour
     }
 
 
-    
+
     public void UpdatePoints(int value, GameObject target)
-    {        
+    {
         if (hudCanvas == null)
         {
             StartHudCanvas();
@@ -96,4 +136,27 @@ public class GameController : MonoBehaviour
         theWall.DestroyTarget(target);
     }
 
+    IEnumerator CountdownTimer(float countdownTimer)
+    {
+        remainderTime = countdownTimer;
+        int increase = 3, maxTargets = 5, timeToCompare = 3;
+
+        while (remainderTime > 0)
+        {
+            int minuts = (int)(remainderTime / 60);
+
+            if (timeToCompare == minuts)
+            {
+                theWall.SetMaxTarget(maxTargets + increase);
+                maxTargets += increase;
+                increase--;
+                timeToCompare--;
+            }
+
+            yield return new WaitForSeconds(1f);
+            remainderTime--;
+        }
+
+        theWall.SetCanContinue(false);
+    }
 }
