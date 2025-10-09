@@ -126,6 +126,12 @@ public class GunController : MonoBehaviour
     public void TeleportToGunHolder()
     {
         transform.position = gunHolder.transform.position;
+        isSelected = false;
+        foreach (Transform child in transform)
+         {
+            if (child.gameObject.GetComponent<Collider>() != null)
+                child.gameObject.GetComponent<Collider>().enabled = true;
+        }
     }
     
 }
