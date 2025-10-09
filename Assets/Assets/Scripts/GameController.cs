@@ -105,15 +105,6 @@ public class GameController : MonoBehaviour
         this.time = time;
     }
 
-    public void UpdateCountdownTimer(int currentAmmo, int magazineSize, int magazineAmount)
-    {
-        if (hudCanvas == null)
-        {
-            StartHudCanvas();
-        }
-        ammo.text = currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
-    }
-
     public void UpdateAmmoCount(int currentAmmo, int magazineSize, int magazineAmount)
     {
         if (hudCanvas == null)
