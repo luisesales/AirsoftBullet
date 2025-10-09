@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     private bool inCollectRange = false;
 
 
-
     // Input variables
 
     private float horizontalInput;
@@ -104,7 +103,15 @@ public class PlayerController : MonoBehaviour
     {
         if (selectedGun != null)
         {
-            Destroy(selectedGun); // Destroy the old selectedGun if it exists
+            selectedGun.transform.SetParent(null); //Remove the old selectedGun from child of the player 
+            selectedGun.transform.rotation = Quaternion.identity; //Set old selectedGun to default rotation
+
+            GunController gunController = new GunController(); //Create a new GunController
+            gunController = selectedGun.GetComponent<GunController>(); //Gets the GunController component if it exists
+            if (gunController != null)
+            {
+                gunController.TeleportToGunHolder(); //Teleport old selectedGun to gunHolder
+            }
         }
         selectedGun = newGun; // Assign the new selectedGun 
         GameObject camera = Camera.main.gameObject;

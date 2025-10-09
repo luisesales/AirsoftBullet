@@ -31,6 +31,9 @@ public class GunController : MonoBehaviour
     protected bool isSelected = false;
 
     protected float currentCooldown;
+
+    [SerializeField]
+    private GameObject gunHolder;
     void Start()
     {
         fireCooldown = 1f / fireRate;
@@ -118,6 +121,11 @@ public class GunController : MonoBehaviour
     private void FinishReload()
     {
         GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+    }
+
+    public void TeleportToGunHolder()
+    {
+        transform.position = gunHolder.transform.position;
     }
     
 }
