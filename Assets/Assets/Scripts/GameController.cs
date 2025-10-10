@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -11,11 +12,15 @@ public class GameController : MonoBehaviour
     private TMPro.TextMeshProUGUI ammo;
     private TMPro.TextMeshProUGUI points;
     private TMPro.TextMeshProUGUI countdownTime;
+    private TMPro.TextMeshProUGUI currentBackspin;
     private float time, remainderTime;
     [SerializeField] 
     private float countdownTimer;
 
     private int pointsCount;
+
+    [SerializeField]
+    private PlayerController playerController;
 
     void Awake()
     {
@@ -39,6 +44,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PrintCurrentBackspin();
         if (time >= 0f)
         {
             time -= Time.deltaTime;
@@ -75,6 +81,7 @@ public class GameController : MonoBehaviour
         points = hudCanvas.transform.Find("Points").GetComponent<TMPro.TextMeshProUGUI>();
         countdownTime = hudCanvas.transform.Find("CountdownTimer").GetComponent<TMPro.TextMeshProUGUI>();
         time = 0f;
+        currentBackspin = hudCanvas.transform.Find("CurrentBackspin").GetComponent<TMPro.TextMeshProUGUI>();
     }
     private void StartGame()
     {
@@ -103,6 +110,11 @@ public class GameController : MonoBehaviour
         }
         countdownTime.gameObject.SetActive(true);
         this.time = time;
+    }
+
+    public void PrintCurrentBackspin()
+    {
+        currentBackspin.text = $"{playerController.GetCurrentBackspin()}";
     }
 
     public void UpdateAmmoCount(int currentAmmo, int magazineSize, int magazineAmount)

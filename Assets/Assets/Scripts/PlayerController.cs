@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
+    private float scrollInput;
     private Vector3 moveDirection;
     private Rigidbody rb;
     private GameObject selectedGun;
@@ -34,6 +36,12 @@ public class PlayerController : MonoBehaviour
     private bool inRangeGun;
 
     private GameObject proximityCanvas;
+
+    [SerializeField]
+    private BulletController bulletController;
+
+    private float currentBackspin;
+    private bool isGunSelected;
     
 
 
@@ -42,8 +50,11 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true; // Prevent physics from rotating the player        
         selectedGunPosition = GameObject.FindWithTag("GunPos").transform;
-        proximityCanvas = GameObject.FindWithTag("ProximityCanvas");        
+        proximityCanvas = GameObject.FindWithTag("ProximityCanvas");
         proximityCanvas.SetActive(false);
+
+        currentBackspin = 0.0001f;
+        bulletController.SetBackspin(currentBackspin);
     }
 
     private void Update()
@@ -53,6 +64,11 @@ public class PlayerController : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+        if(isGunSelected)
+        {
+            ScrollInput();
+        }
+        
 
         if (inCollectRange && Input.GetKeyDown(KeyCode.E))
         {
@@ -119,6 +135,7 @@ public class PlayerController : MonoBehaviour
         selectedGun.transform.position = selectedGunPosition.position; // Reset position relative to player
         selectedGun.transform.rotation = selectedGunPosition.rotation;
         selectedGun.GetComponent<GunController>().SelectGun(); // Call the SelectGun method to activate it
+        isGunSelected = true;
     }
 
     public void collectMagazine(GameObject magazine)
@@ -152,5 +169,28 @@ public class PlayerController : MonoBehaviour
             proximityCanvas.SetActive(false);
             inCollectRange = false;
         }
+    }
+
+    public void ScrollInput()
+    {
+        scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        Debug.Log($"ScrollInput:{scrollInput} - CurrentBackspin:{currentBackspin}");
+        if (scrollInput > 0)
+        {
+            currentBackspin += scrollInput / 1000;
+            currentBackspin = (float)Math.Round(currentBackspin, 5);
+            bulletController.SetBackspin(currentBackspin);
+        }
+        else if (scrollInput < 0)
+        {
+            currentBackspin += scrollInput / 1000;
+            currentBackspin = (float)Math.Round(currentBackspin, 5);
+            bulletController.SetBackspin(currentBackspin);
+        }
+    }
+    
+    public float GetCurrentBackspin()
+    {
+        return currentBackspin;
     }
 }

@@ -128,10 +128,15 @@ public class GunController : MonoBehaviour
         transform.position = gunHolder.transform.position;
         isSelected = false;
         foreach (Transform child in transform)
-         {
+        {
             if (child.gameObject.GetComponent<Collider>() != null)
                 child.gameObject.GetComponent<Collider>().enabled = true;
         }
+    }
+    
+    public bool GetIsSelected()
+    {
+        return isSelected;
     }
     
 }

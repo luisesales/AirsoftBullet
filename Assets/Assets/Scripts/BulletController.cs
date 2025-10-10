@@ -78,15 +78,20 @@ public class BulletController : MonoBehaviour
         rb.AddForce(magnusForce, ForceMode.Force);
 
     }
-    
+
     void OnTriggerEnter(Collider collision)
     {
         Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Target"))
-        {               
-            GameController.Instance.UpdatePoints(1,collision.gameObject);         
-            Destroy(gameObject);            
+        {
+            GameController.Instance.UpdatePoints(1, collision.gameObject);
+            Destroy(gameObject);
         }
-        
+
+    }
+    
+    public void SetBackspin(float backspin)
+    {
+        this.backspin = backspin;
     }
 }
