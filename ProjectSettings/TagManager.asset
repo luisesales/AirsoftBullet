@@ -13,6 +13,7 @@ TagManager:
   - ProximityCanvas
   - HUDCanvas
   - TheWall
+  - ShotgunMagazine
   layers:
   - Default
   - TransparentFX

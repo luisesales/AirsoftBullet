@@ -84,24 +84,24 @@ public class PlayerController : MonoBehaviour
             proximityCanvas.SetActive(false);
         }
         // Cria um vetor de velocidade 2D (plano) a partir da velocidade do Rigidbody
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         // Limita a velocidade se necessário
         if (flatVel.magnitude > speed)
         {
             Vector3 limitedVel = flatVel.normalized * speed;
 
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
 
 
         if (grounded)
         {
-            rb.drag = groundDrag; // Apply ground linearDamping when grounded
+            rb.linearDamping = groundDrag; // Apply ground linearDamping when grounded
         }
         else
         {
-            rb.drag = 0; // No linearDamping when in the air
+            rb.linearDamping = 0; // No linearDamping when in the air
         }
     }
 
@@ -151,7 +151,11 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
         inRangeGun = collision.gameObject.CompareTag("Weapon");
-        if ((inRangeGun && collision.gameObject != selectedGun) || (collision.gameObject.CompareTag("Magazine") && selectedGun != null))
+        if (
+            (inRangeGun && collision.gameObject != selectedGun) ||
+            (collision.gameObject.CompareTag("Magazine") && (selectedGun.name == "Pistol" || selectedGun.name == "Rifle")) ||
+            (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun")
+         )
         {
             proximityCanvas.SetActive(true);
             proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
@@ -164,7 +168,9 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("OnTriggerExit: " + collision.gameObject.name);
         inRangeGun = collision.gameObject.CompareTag("Weapon");
-        if (inRangeGun || collision.gameObject.CompareTag("Magazine"))
+        if (inRangeGun ||
+            collision.gameObject.CompareTag("Magazine") ||
+            collision.gameObject.CompareTag("ShotgunMagazine"))
         {
             proximityCanvas.SetActive(false);
             inCollectRange = false;

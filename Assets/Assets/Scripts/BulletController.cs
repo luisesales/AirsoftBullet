@@ -59,13 +59,13 @@ public class BulletController : MonoBehaviour
 
 
 
-        Vector3 dragDirection = -rb.velocity.normalized;
-        Vector3 dragForce = 0.5f * airDensity * Mathf.Pow(rb.velocity.magnitude, 2) * dragCoefficient * Mathf.PI * Mathf.Pow(radius, 2) * dragDirection;
+        Vector3 dragDirection = -rb.linearVelocity.normalized;
+        Vector3 dragForce = 0.5f * airDensity * Mathf.Pow(rb.linearVelocity.magnitude, 2) * dragCoefficient * Mathf.PI * Mathf.Pow(radius, 2) * dragDirection;
         rb.AddForce(dragForce, ForceMode.Force);
 
         // Vector3 magnusDirection = Vector3.Cross(rb.angularVelocity, rb.velocity).normalized;
-        Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
-        Vector3 magnusForce = Mathf.Sqrt(rb.velocity.magnitude) * magnusDirection * backspin;
+        Vector3 magnusDirection = Vector3.Cross(rb.linearVelocity, transform.right).normalized;
+        Vector3 magnusForce = Mathf.Sqrt(rb.linearVelocity.magnitude) * magnusDirection * backspin;
 
 
         // Vector3 magnusDirection = Vector3.Cross(rb.velocity, transform.right).normalized;
