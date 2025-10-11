@@ -41,4 +41,10 @@ public class CameraController : MonoBehaviour
         transform.rotation = Quaternion.Euler(rotationX, rotationY, 0f);
         orientation.rotation = Quaternion.Euler(0f, rotationY, 0f);
     }
+
+    public void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 }

@@ -155,7 +155,7 @@ public class PlayerController : MonoBehaviour
             (inRangeGun && collision.gameObject != selectedGun) ||
             (collision.gameObject.CompareTag("Magazine") && (selectedGun.name == "Pistol" || selectedGun.name == "Rifle")) ||
             (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun")
-         )
+        )
         {
             proximityCanvas.SetActive(true);
             proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
     public void ScrollInput()
     {
         scrollInput = Input.GetAxis("Mouse ScrollWheel");
-        Debug.Log($"ScrollInput:{scrollInput} - CurrentBackspin:{currentBackspin}");
+        //Debug.Log($"ScrollInput:{scrollInput} - CurrentBackspin:{currentBackspin}");
         if (scrollInput > 0)
         {
             currentBackspin += scrollInput / 1000;

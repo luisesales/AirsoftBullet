@@ -14,6 +14,7 @@ TagManager:
   - HUDCanvas
   - TheWall
   - ShotgunMagazine
+  - GameOverCanvas
   layers:
   - Default
   - TransparentFX

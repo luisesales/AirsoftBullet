@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public static GameController Instance { get; private set; }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     private GameObject hudCanvas;
+    private GameObject gameOverCanvas;
     private TheWallController theWall;
     private TMPro.TextMeshProUGUI timer;
     private TMPro.TextMeshProUGUI ammo;
@@ -19,8 +21,9 @@ public class GameController : MonoBehaviour
 
     private int pointsCount;
 
-    [SerializeField]
     private PlayerController playerController;
+    
+    private bool gameStarted = false;
 
     void Awake()
     {
@@ -38,38 +41,40 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        StartGame();
+        RestartGame();
     }
 
     // Update is called once per frame
     void Update()
     {
-        PrintCurrentBackspin();
-        if (time >= 0f)
+        if (gameStarted)
         {
-            time -= Time.deltaTime;
-            timer.text = Mathf.CeilToInt(time).ToString();
-        }
-        else if (timer.gameObject.activeSelf)
-        {
-            timer.gameObject.SetActive(false);
-        }
-
-        if(remainderTime >= 0)
-        {
-            int minuts = (int)remainderTime / 60;
-            int seconds = (int)remainderTime % 60;
-            if (seconds < 10)
+            PrintCurrentBackspin();
+            if (time >= 0f)
             {
-                countdownTime.text = $"{minuts}:0{seconds}";
+                time -= Time.deltaTime;
+                timer.text = Mathf.CeilToInt(time).ToString();
             }
-            else
+            else if (timer.gameObject.activeSelf)
             {
-                countdownTime.text = $"{minuts}:{seconds}";
+                timer.gameObject.SetActive(false);
             }
-            
-        }
 
+            if (remainderTime >= 0)
+            {
+                int minuts = (int)remainderTime / 60;
+                int seconds = (int)remainderTime % 60;
+                if (seconds < 10)
+                {
+                    countdownTime.text = $"{minuts}:0{seconds}";
+                }
+                else
+                {
+                    countdownTime.text = $"{minuts}:{seconds}";
+                }
+
+            }
+        }
     }
 
     private void StartHudCanvas()
@@ -83,13 +88,17 @@ public class GameController : MonoBehaviour
         time = 0f;
         currentBackspin = hudCanvas.transform.Find("CurrentBackspin").GetComponent<TMPro.TextMeshProUGUI>();
     }
-    private void StartGame()
+    private void StartGame(Scene scene, LoadSceneMode mode)
     {
         StartHudCanvas();
         pointsCount = 0;
-        //UpdatePoints(pointsCount);
         theWall = GameObject.FindWithTag("TheWall").GetComponent<TheWallController>();
-        StartCoroutine(CountdownTimer(countdownTimer));        
+        StartCoroutine(CountdownTimer(countdownTimer));      
+        gameOverCanvas = GameObject.FindWithTag("GameOverCanvas");
+        gameOverCanvas.SetActive(false);
+        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        gameStarted = true;
+        SceneManager.sceneLoaded -= StartGame;
     }
 
     public void StartTimer(float time)
@@ -126,6 +135,19 @@ public class GameController : MonoBehaviour
         ammo.text = currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
     }
 
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= StartGame;
+    }
+    
+    private void EndGame()
+    {
+        gameOverCanvas.SetActive(true);
+        gameOverCanvas.transform.Find("Points").GetComponent<TMPro.TextMeshProUGUI>().text = pointsCount.ToString();
+        theWall.SetCanContinue(false);
+        Camera.main.gameObject.GetComponent<CameraController>().UnlockCursor();
+        gameStarted = false;
+    }
 
 
     public void UpdatePoints(int value, GameObject target)
@@ -159,7 +181,13 @@ public class GameController : MonoBehaviour
             yield return new WaitForSeconds(1f);
             remainderTime--;
         }
+        EndGame();
+    }
 
-        theWall.SetCanContinue(false);
+    public void RestartGame()
+    {
+        Debug.Log("Restarting Game"); 
+        SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);         
+        SceneManager.sceneLoaded += StartGame;
     }
 }
