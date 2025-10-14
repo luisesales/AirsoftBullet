@@ -112,10 +112,22 @@ public class GunController : MonoBehaviour
         isAutomatic = !isAutomatic;
     }
 
-    public void CollectAmmo(int amount)
+    public void CollectAmmo(int amount, GameObject magazine)
     {
+        if(ammoCount < magazineSize)
+        {
+            ammoCount = magazineSize;
+            GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+            amount--;            
+        }
+        if(magazineAmount+amount > maxMagazineAmount)
+        {
+            Debug.Log("Max magazines reached");
+            return;
+        }
         magazineAmount = Mathf.Min(magazineAmount + amount, maxMagazineAmount);
         GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        Destroy(magazine);
     }
 
     private void FinishReload()

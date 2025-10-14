@@ -142,8 +142,7 @@ public class PlayerController : MonoBehaviour
     {
         if (selectedGun != null)
         {
-            selectedGun.GetComponent<GunController>().CollectAmmo(1);
-            Destroy(magazine);
+            selectedGun.GetComponent<GunController>().CollectAmmo(1,magazine);
         }
     }
 
