@@ -151,18 +151,32 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("OnTriggerEnter: " + collision.gameObject.name);
         inRangeGun = collision.gameObject.CompareTag("Weapon");
-        if (
-            (inRangeGun && collision.gameObject != selectedGun) ||
-            (collision.gameObject.CompareTag("Magazine") && (selectedGun.name == "Pistol" || selectedGun.name == "Rifle")) ||
-            (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun")
-        )
+        if (selectedGun == null)
         {
-            proximityCanvas.SetActive(true);
-            proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
-            inCollectRange = true;
-            inRangeCollectable = collision.gameObject;
+            if (
+                inRangeGun && collision.gameObject != selectedGun
+            )
+            {
+                proximityCanvas.SetActive(true);
+                proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
+                inCollectRange = true;
+                inRangeCollectable = collision.gameObject;
+            }
         }
-
+        else
+        {
+            if (
+                (inRangeGun && collision.gameObject != selectedGun) ||
+                (collision.gameObject.CompareTag("Magazine") && (selectedGun.name == "Pistol" || selectedGun.name == "Rifle")) ||
+                (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun")
+            )
+            {
+                proximityCanvas.SetActive(true);
+                proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
+                inCollectRange = true;
+                inRangeCollectable = collision.gameObject;
+            }
+        }
     }
     void OnTriggerExit(Collider collision)
     {

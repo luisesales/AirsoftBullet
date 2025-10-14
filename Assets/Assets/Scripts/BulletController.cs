@@ -22,6 +22,19 @@ public class BulletController : MonoBehaviour
 
     void Awake()
     {
+        /*lineRenderer = GetComponent<LineRenderer>();
+        if (lineRenderer == null)
+        {
+            lineRenderer = gameObject.AddComponent<LineRenderer>();
+            lineRenderer.material = new Material(Shader.Find("Sprites/Default")); // Basic material
+            lineRenderer.startWidth = 0.01f;
+            lineRenderer.endWidth = 0.01f;
+            lineRenderer.startColor = Color.blue;
+            lineRenderer.endColor = Color.blue;
+        }*/
+    }
+    void Start()
+    {
         lineRenderer = GetComponent<LineRenderer>();
         if (lineRenderer == null)
         {
@@ -32,9 +45,6 @@ public class BulletController : MonoBehaviour
             lineRenderer.startColor = Color.blue;
             lineRenderer.endColor = Color.blue;
         }
-    }
-    void Start()
-    {
 
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up.normalized * speed * rb.mass + -transform.forward * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);

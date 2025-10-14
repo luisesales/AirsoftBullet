@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameController : MonoBehaviour
     
     private GameObject hudCanvas;
     private GameObject gameOverCanvas;
+    private Button restart;
     private TheWallController theWall;
     private TMPro.TextMeshProUGUI timer;
     private TMPro.TextMeshProUGUI ammo;
@@ -91,14 +93,21 @@ public class GameController : MonoBehaviour
     private void StartGame(Scene scene, LoadSceneMode mode)
     {
         StartHudCanvas();
+
         pointsCount = 0;
         theWall = GameObject.FindWithTag("TheWall").GetComponent<TheWallController>();
-        StartCoroutine(CountdownTimer(countdownTimer));      
+        StartCoroutine(CountdownTimer(countdownTimer));
         gameOverCanvas = GameObject.FindWithTag("GameOverCanvas");
+        restart = gameOverCanvas.transform.Find("Restart").GetComponent<Button>();
+        if(restart != null)
+        {
+            restart.onClick.AddListener(RestartGame);
+        }
         gameOverCanvas.SetActive(false);
         playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
         gameStarted = true;
         SceneManager.sceneLoaded -= StartGame;
+        remainderTime = countdownTimer;
     }
 
     public void StartTimer(float time)
@@ -186,8 +195,10 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("Restarting Game"); 
-        SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);         
+        Debug.Log("Restarting Game");
+        SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        Debug.Log("Loading Game");
         SceneManager.sceneLoaded += StartGame;
+        Debug.Log("StartGame");
     }
 }
