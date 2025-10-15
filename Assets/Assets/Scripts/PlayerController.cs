@@ -167,7 +167,8 @@ public class PlayerController : MonoBehaviour
             if (
                 (inRangeGun && collision.gameObject != selectedGun) ||
                 (collision.gameObject.CompareTag("Magazine") && (selectedGun.name == "Pistol" || selectedGun.name == "Rifle")) ||
-                (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun")
+                (collision.gameObject.CompareTag("ShotgunMagazine") && selectedGun.name == "Shotgun") ||
+                (collision.gameObject.CompareTag("DrumMagazine") && selectedGun.name == "MotorRifle")
             )
             {
                 proximityCanvas.SetActive(true);
@@ -183,7 +184,8 @@ public class PlayerController : MonoBehaviour
         inRangeGun = collision.gameObject.CompareTag("Weapon");
         if (inRangeGun ||
             collision.gameObject.CompareTag("Magazine") ||
-            collision.gameObject.CompareTag("ShotgunMagazine"))
+            collision.gameObject.CompareTag("ShotgunMagazine") ||
+            collision.gameObject.CompareTag("DrumMagazine"))
         {
             proximityCanvas.SetActive(false);
             inCollectRange = false;

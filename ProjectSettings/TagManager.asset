@@ -15,6 +15,7 @@ TagManager:
   - TheWall
   - ShotgunMagazine
   - GameOverCanvas
+  - DrumMagazine
   layers:
   - Default
   - TransparentFX

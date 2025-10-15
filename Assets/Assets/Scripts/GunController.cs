@@ -34,7 +34,7 @@ public class GunController : MonoBehaviour
 
     [SerializeField]
     private GameObject gunHolder;
-    void Start()
+    protected virtual void Start()
     {
         fireCooldown = 1f / fireRate;
         automatic = isAutomatic;
@@ -44,7 +44,7 @@ public class GunController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if (isSelected)
         {

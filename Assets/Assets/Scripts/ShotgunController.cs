@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShotgunSpread : GunController
+public class ShotgunController : GunController
 {
     [SerializeField]
     private int numberOfPellets = 6;
