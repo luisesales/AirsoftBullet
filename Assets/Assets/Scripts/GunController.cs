@@ -79,7 +79,7 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
         currentCooldown = fireCooldown;
         ammoCount--;
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, automatic);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
 
     protected void Reload()
