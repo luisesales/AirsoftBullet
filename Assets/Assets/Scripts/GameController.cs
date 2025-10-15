@@ -135,13 +135,14 @@ public class GameController : MonoBehaviour
         currentBackspin.text = $"{playerController.GetCurrentBackspin()}";
     }
 
-    public void UpdateAmmoCount(int currentAmmo, int magazineSize, int magazineAmount)
+    public void UpdateAmmoCount(int currentAmmo, int magazineSize, int magazineAmount, bool isAutomatic)
     {
         if (hudCanvas == null)
         {
             StartHudCanvas();
         }
-        ammo.text = currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
+        string auto = isAutomatic ? "III(A) " : "I(S) ";
+        ammo.text = auto+  currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
     }
 
     private void OnDestroy()

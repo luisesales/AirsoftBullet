@@ -79,7 +79,7 @@ public class GunController : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, bulletHole.position, bulletHole.rotation);
         currentCooldown = fireCooldown;
         ammoCount--;
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, automatic);
     }
 
     protected void Reload()
@@ -105,11 +105,12 @@ public class GunController : MonoBehaviour
             if (child.gameObject.GetComponent<Collider>() != null)
                 child.gameObject.GetComponent<Collider>().enabled = false;
         }
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
     public void SwitchMode()
     {
         isAutomatic = !isAutomatic;
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
 
     public void CollectAmmo(int amount, GameObject magazine)
@@ -117,7 +118,7 @@ public class GunController : MonoBehaviour
         if(ammoCount < magazineSize)
         {
             ammoCount = magazineSize;
-            GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+            GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
             amount--;            
         }
         if(magazineAmount+amount > maxMagazineAmount)
@@ -126,13 +127,13 @@ public class GunController : MonoBehaviour
             return;
         }
         magazineAmount = Mathf.Min(magazineAmount + amount, maxMagazineAmount);
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
         Destroy(magazine);
     }
 
     private void FinishReload()
     {
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
 
     public void TeleportToGunHolder()

@@ -22,6 +22,6 @@ public class ShotgunController : GunController
             currentCooldown = fireCooldown;
         }
         ammoCount--;
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
 }

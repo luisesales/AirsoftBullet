@@ -66,6 +66,6 @@ public class MotorRifleController : GunController
         fireCooldown = 1f / (fireRate * fireRateMutiplier);        
         currentCooldown = fireCooldown;
         ammoCount--;
-        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount);
+        GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
     }
 }
