@@ -48,7 +48,8 @@ public class BulletController : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
         rb.AddForce(transform.up.normalized * speed * rb.mass + -transform.forward * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);
-        //rb.AddForce(transform.up * speed * rb.mass * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);        
+        //rb.AddForce(transform.up * speed * rb.mass * (float)Math.Sqrt(speed) * backspin, ForceMode.Impulse);
+        Debug.Log($"Massa: {rb.mass}");
         Destroy(gameObject, 6f);
     }
 
@@ -99,7 +100,7 @@ public class BulletController : MonoBehaviour
         }
 
     }
-    
+
     public void SetBackspin(float backspin)
     {
         this.backspin = backspin;

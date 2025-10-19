@@ -4,8 +4,10 @@ using System.Collections;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField]
+    //[SerializeField]
     protected GameObject bulletPrefab;
+    [SerializeField]
+    protected GameObject[] bulletPrefabList;
     protected Transform bulletHole;
 
     protected float fireCooldown;
@@ -41,6 +43,14 @@ public class GunController : MonoBehaviour
         magazineSize = ammoCount;
         maxMagazineAmount = magazineAmount;
         bulletHole = transform.Find("BulletHole");
+
+        bulletPrefab = bulletPrefabList[0];
+
+        Rigidbody rb = bulletPrefab.GetComponent<Rigidbody>();
+        if(rb != null)
+        {
+            GameController.Instance.UpdateMassValue(rb.mass);
+        }
     }
 
     // Update is called once per frame
@@ -119,7 +129,25 @@ public class GunController : MonoBehaviour
         {
             ammoCount = magazineSize;
             GameController.Instance.UpdateAmmoCount(ammoCount, magazineSize, magazineAmount, isAutomatic);
-            amount--;            
+            amount--;
+            MagazineController magazineController = magazine.GetComponent<MagazineController>();
+            if(magazineController != null)
+            {
+                if (magazineController.GetBulletMass() == 0.00025f)
+                {
+                    bulletPrefab = bulletPrefabList[1];
+                }
+                else if (magazineController.GetBulletMass() == 0.00032f)
+                {
+                    bulletPrefab = bulletPrefabList[2];
+                }
+                else
+                {
+                    bulletPrefab = bulletPrefabList[0];
+                }
+
+                GameController.Instance.UpdateMassValue(magazineController.GetBulletMass());
+            }
         }
         if(magazineAmount+amount > maxMagazineAmount)
         {

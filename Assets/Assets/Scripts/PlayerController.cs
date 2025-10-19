@@ -172,7 +172,17 @@ public class PlayerController : MonoBehaviour
             )
             {
                 proximityCanvas.SetActive(true);
-                proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
+                
+                MagazineController magazineController = collision.gameObject.GetComponent<MagazineController>();
+                if (magazineController != null)
+                {
+                    proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name + "Mass:" +magazineController.GetBulletMass().ToString();
+                }
+                else
+                {
+                    proximityCanvas.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Press E to collect " + collision.gameObject.name;
+                }
+
                 inCollectRange = true;
                 inRangeCollectable = collision.gameObject;
             }

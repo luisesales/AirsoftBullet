@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
     private TMPro.TextMeshProUGUI points;
     private TMPro.TextMeshProUGUI countdownTime;
     private TMPro.TextMeshProUGUI currentBackspin;
+    private TMPro.TextMeshProUGUI mass;
     private float time, remainderTime;
     [SerializeField] 
     private float countdownTimer;
@@ -89,6 +90,7 @@ public class GameController : MonoBehaviour
         countdownTime = hudCanvas.transform.Find("CountdownTimer").GetComponent<TMPro.TextMeshProUGUI>();
         time = 0f;
         currentBackspin = hudCanvas.transform.Find("CurrentBackspin").GetComponent<TMPro.TextMeshProUGUI>();
+        mass = hudCanvas.transform.Find("Mass").GetComponent<TMPro.TextMeshProUGUI>();
     }
     private void StartGame(Scene scene, LoadSceneMode mode)
     {
@@ -140,8 +142,13 @@ public class GameController : MonoBehaviour
         if (hudCanvas == null)
         {
             StartHudCanvas();
-        }        
-        ammo.text = (isAutomatic ? "III(A) " : "I(S) ")+  currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
+        }
+        ammo.text = (isAutomatic ? "III(A) " : "I(S) ") + currentAmmo + " / " + magazineSize + " (" + magazineAmount + ")";
+    }
+    
+    public void UpdateMassValue(float mass)
+    {
+        this.mass.text = $"Mass: {mass}";
     }
 
     private void OnDestroy()

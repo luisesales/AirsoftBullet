@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4174181752495745847}
   - component: {fileID: 7088731401698501868}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2944576728798232045}
   serializedVersion: 5
-  m_Mass: 0.0002
+  m_Mass: 0.00025
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
