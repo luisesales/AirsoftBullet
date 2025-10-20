@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a8106146ceedc46bfbd1abffd7aca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2944576728798232045, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
+  bulletPrefabList: []
   fireRate: 5
   isAutomatic: 1
   ammoCount: 80
