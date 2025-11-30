@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float speed;
 
+    [SerializeField]
+    private float jumpForce;
+
 
     [SerializeField]
     private float playerHeight;
@@ -25,7 +28,6 @@ public class PlayerController : MonoBehaviour
 
 
     // Input variables
-
     private float horizontalInput;
     private float verticalInput;
     private float scrollInput;
@@ -98,6 +100,10 @@ public class PlayerController : MonoBehaviour
         if (grounded)
         {
             rb.linearDamping = groundDrag; // Apply ground linearDamping when grounded
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Jump force
+            }
         }
         else
         {
