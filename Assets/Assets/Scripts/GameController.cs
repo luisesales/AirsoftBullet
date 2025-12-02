@@ -71,7 +71,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         if (gameStarted)
-        {
+        {            
             PrintCurrentBackspin();
             if (time >= 0f)
             {

@@ -16,6 +16,7 @@ TagManager:
   - ShotgunMagazine
   - GameOverCanvas
   - DrumMagazine
+  - Terrain
   layers:
   - Default
   - TransparentFX

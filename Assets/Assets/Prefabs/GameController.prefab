@@ -45,3 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownTimer: 300
+  spawnThreshold: 0.5
+  noiseScale: 0.5
+  heightMultiplier: 3
+  mapWidth: 4
+  mapDepth: 3
+  platformPrefab: {fileID: 6476462703289909400, guid: 79630af1531df0945806c4d14542f570, type: 3}
+  terrainController: {fileID: 0}
+  terrainChangerTime: 10
