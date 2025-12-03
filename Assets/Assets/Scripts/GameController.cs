@@ -31,20 +31,8 @@ public class GameController : MonoBehaviour
 
 
     // Map generation parameters
-    [SerializeField]
-    private float spawnThreshold = 0.5f;
-    [SerializeField]
-    private float noiseScale = 0.5f;
-    [SerializeField]
-    private float heightMultiplier = 5f;
-
-    [SerializeField]
-    private float mapWidth = 20f;
-    [SerializeField]
-    private float mapDepth = 10f;
-
-    [SerializeField]
-    private GameObject platformPrefab;
+    private PerlinNoiseGenerator perlinNoiseGenerator;
+    private WallsController wallsController;
     private Vector3 checkSize = new Vector3(0.5f, 1f, 0.5f);
 
 
@@ -72,6 +60,7 @@ public class GameController : MonoBehaviour
     {
         if (gameStarted)
         {            
+            wallsController.updateNoiseMap(perlinNoiseGenerator.noiseMap);
             PrintCurrentBackspin();
             if (time >= 0f)
             {
@@ -94,8 +83,7 @@ public class GameController : MonoBehaviour
                 else
                 {
                     countdownTime.text = $"{minuts}:{seconds}";
-                }
-
+                }            
             }
         }
     }
@@ -115,7 +103,8 @@ public class GameController : MonoBehaviour
     private void StartGame(Scene scene, LoadSceneMode mode)
     {
         StartHudCanvas();
-        GenerateMap();
+        perlinNoiseGenerator = GameObject.FindWithTag("Noise").GetComponent<PerlinNoiseGenerator>();
+        wallsController = GameObject.FindWithTag("WallsController").GetComponent<WallsController>();        
         pointsCount = 0;
         theWall = GameObject.FindWithTag("TheWall").GetComponent<TheWallController>();
         StartCoroutine(CountdownTimer(countdownTimer));
@@ -227,40 +216,5 @@ public class GameController : MonoBehaviour
         Debug.Log("Loading Game");
         SceneManager.sceneLoaded += StartGame;
         Debug.Log("StartGame");
-    }
-
-    private void GenerateMap()
-    {
-        for (int x = 0; x < mapWidth; x++)
-        {
-            for (int z = 0; z < mapDepth; z++)
-            {
-                float noise = Mathf.PerlinNoise(x * noiseScale, z * noiseScale);
-                
-                if (noise >= spawnThreshold)
-                {
-                    Vector3 pos = new Vector3(x, noise * heightMultiplier, z);
-
-                // Testa se já existe plataforma perto
-                bool existeAlgoPerto = Physics.CheckBox(
-                    pos,
-                    checkSize,
-                    Quaternion.identity,
-                    7 << LayerMask.NameToLayer("Platform")
-                );
-
-                if (!existeAlgoPerto)
-                {
-                    Spawn(pos);
-                }
-                    
-                }
-            }
-        }
-    }
-
-    private void Spawn(Vector3 position)
-    {
-        Instantiate(platformPrefab, position, Quaternion.identity);
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PerlinoiseGenerator : MonoBehaviour
+public class PerlinNoiseGenerator : MonoBehaviour
 {
     [SerializeField]
     private float scale;
@@ -16,13 +16,14 @@ public class PerlinoiseGenerator : MonoBehaviour
 
     private Renderer renderer;
 
-    [SerializeField]
-    private GameObject[] row_walls;
+    public float[,] noiseMap {private set; get;}
+
 
     void Start()
     {
+        noiseMap = new float[width,height];
         renderer = GetComponent<Renderer>();
-        row_walls = new GameObject[10];
+        // row_walls = new GameObject[10];
         for (int i = 0; i < 10; i++)
         {
             
@@ -41,8 +42,9 @@ public class PerlinoiseGenerator : MonoBehaviour
         for(int i = 0; i < width; i++)
         {
             for(int j = 0; j < height; j++)
-            {
+            {                
                 float p_number = PerlinoiseNumberGenerator(i, j);
+                noiseMap[i, j] = p_number;
                 Color color = new Color(p_number, p_number, p_number);
                 texture.SetPixel(i, j, color);
             }

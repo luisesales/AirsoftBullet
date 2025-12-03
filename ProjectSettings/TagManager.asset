@@ -17,6 +17,8 @@ TagManager:
   - GameOverCanvas
   - DrumMagazine
   - Terrain
+  - TerrainPillar
+  - Noise
   layers:
   - Default
   - TransparentFX
