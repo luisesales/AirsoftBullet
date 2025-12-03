@@ -24,8 +24,9 @@ public class WallRow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float newY = baseHeight + Mathf.Sin(Time.time * speed) * amplitude;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        //float newY = baseHeight + Mathf.Sin(Time.time * speed) * amplitude;
+        //transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        transform.position = new Vector3(transform.position.x, baseHeight * amplitude, transform.position.z);
     }
 
     public void updateAmplitude(float factor)

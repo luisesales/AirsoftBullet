@@ -31,6 +31,7 @@ public class GameController : MonoBehaviour
 
 
     // Map generation parameters
+    [SerializeField]
     private PerlinNoiseGenerator perlinNoiseGenerator;
     private WallsController wallsController;
     private Vector3 checkSize = new Vector3(0.5f, 1f, 0.5f);

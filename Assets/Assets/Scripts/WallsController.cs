@@ -7,13 +7,17 @@ public class WallsController : MonoBehaviour
     private GameObject[] wall_matrix;
 
     [SerializeField]
-    private float updateThreshold = 5f;
+    private float updateThreshold = 50f;
     private float currentThershold;
+
+    [SerializeField]
+    private PerlinNoiseGenerator perlinNoiseGenerator;
 
     private float[,] noiseMap;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        noiseMap = perlinNoiseGenerator.noiseMap;
         currentThershold = updateThreshold;
         wall_matrix = GameObject.FindGameObjectsWithTag("TerrainPillar");
     }
@@ -36,7 +40,7 @@ public class WallsController : MonoBehaviour
         {
             for (int x = 0; x < noiseMap.GetLength(0); x++)
             {
-                wall_matrix[x + noiseMap.GetLength(0) * y].GetComponent<WallRow>().updateAmplitude(noiseMap[x,y]);                
+                wall_matrix[x + (noiseMap.GetLength(0) - 1) * y].GetComponent<WallRow>().updateAmplitude(noiseMap[x,y]);                
             }
         }
     }

@@ -4,15 +4,15 @@ using UnityEngine;
 public class PerlinNoiseGenerator : MonoBehaviour
 {
     [SerializeField]
-    private float scale;
+    private float scale = 5;
     [SerializeField]
     private float offsetX;
     [SerializeField]
     private float offsetY;
     [SerializeField]
-    private int width;
+    private int width = 10;
     [SerializeField]
-    private int height;
+    private int height = 10;
 
     private Renderer renderer;
 

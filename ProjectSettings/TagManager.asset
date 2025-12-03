@@ -19,6 +19,7 @@ TagManager:
   - Terrain
   - TerrainPillar
   - Noise
+  - WallsController
   layers:
   - Default
   - TransparentFX
