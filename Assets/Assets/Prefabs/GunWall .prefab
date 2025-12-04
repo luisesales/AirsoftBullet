@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc963e8a9ad93fc41842b6027ff86992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2944576728798232045, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
+  bulletPrefabList: []
   fireRate: 5
   isAutomatic: 1
   ammoCount: 30
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b9b0e65eaf00842850c909665dcfd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2944576728798232045, guid: 84c354555830b47479c83ff93c108f41, type: 3}
+  bulletPrefabList: []
   fireRate: 1
   isAutomatic: 0
   ammoCount: 8
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc963e8a9ad93fc41842b6027ff86992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2944576728798232045, guid: b7939ce5cec853f48bd4a6e756fbd645, type: 3}
+  bulletPrefabList: []
   fireRate: 1
   isAutomatic: 0
   ammoCount: 15
@@ -2872,14 +2872,6 @@ PrefabInstance:
       propertyPath: gunHolder
       value: 
       objectReference: {fileID: 3899571314910857104}
-    - target: {fileID: 4520191831098706484, guid: d22d8a537d1c80f46af227873fd4aabf, type: 3}
-      propertyPath: heatTimer
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4520191831098706484, guid: d22d8a537d1c80f46af227873fd4aabf, type: 3}
-      propertyPath: maxFireRateMutiplier
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6617022793443410473, guid: d22d8a537d1c80f46af227873fd4aabf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

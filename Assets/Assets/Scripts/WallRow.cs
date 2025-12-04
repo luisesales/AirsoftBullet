@@ -45,12 +45,11 @@ public class WallRow : MonoBehaviour
     }
 
     public void updateAmplitude(float factor)
-    {
+    {        
         factor = Mathf.Clamp01(factor);
 
         amplitude = totalAmplitude * factor;
         targetY = baseHeight + amplitude;
-        reachedPos = false;
-        
+        reachedPos = false;        
     }
 }

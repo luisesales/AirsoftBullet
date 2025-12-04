@@ -16,8 +16,7 @@ public class WallsController : MonoBehaviour
     private float[,] noiseMap;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
-        noiseMap = perlinNoiseGenerator.noiseMap;
+    {                
         currentThershold = updateThreshold;
         wall_matrix = GameObject.FindGameObjectsWithTag("TerrainPillar");
     }
@@ -35,17 +34,19 @@ public class WallsController : MonoBehaviour
     }
 
     public void updateWalls() // Variable with the texture
-    {        
+    {                     
         for (int y = 0; y < noiseMap.GetLength(1); y++)
         {
             for (int x = 0; x < noiseMap.GetLength(0); x++)
             {
+                Debug.Log("Updating Wall at: " + x + ", " + y + " with value: " + noiseMap[x,y]);
                 wall_matrix[x + (noiseMap.GetLength(0) - 1) * y].GetComponent<WallRow>().updateAmplitude(noiseMap[x,y]);                
             }
         }
     }
     public void updateNoiseMap(float[,] newNoiseMap)
     {
+        
         noiseMap = newNoiseMap;
     }
 }

@@ -1217,7 +1217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 811964248}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Row1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2554,7 +2554,8 @@ GameObject:
   - component: {fileID: 3107367653035097152}
   - component: {fileID: 1243999090635571130}
   - component: {fileID: 6876804342427148240}
-  m_Layer: 0
+  - component: {fileID: 6876804342427148241}
+  m_Layer: 3
   m_Name: Cube.061
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2573,7 +2574,8 @@ GameObject:
   - component: {fileID: 7184499552169190572}
   - component: {fileID: 8839853226048632300}
   - component: {fileID: 8839853226048632301}
-  m_Layer: 0
+  - component: {fileID: 8839853226048632302}
+  m_Layer: 3
   m_Name: Cube.045
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2592,7 +2594,8 @@ GameObject:
   - component: {fileID: 8554778848473645858}
   - component: {fileID: 325728614401260802}
   - component: {fileID: 8554778848473645859}
-  m_Layer: 0
+  - component: {fileID: 8554778848473645860}
+  m_Layer: 3
   m_Name: Platform 7
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2611,7 +2614,8 @@ GameObject:
   - component: {fileID: 88299776813379257}
   - component: {fileID: 2448033282970006133}
   - component: {fileID: 8840325784393109750}
-  m_Layer: 0
+  - component: {fileID: 8840325784393109751}
+  m_Layer: 3
   m_Name: Cube.081
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2773,7 +2777,8 @@ GameObject:
   - component: {fileID: 5856643289156181746}
   - component: {fileID: 6286941004720889061}
   - component: {fileID: 6286941004720889062}
-  m_Layer: 0
+  - component: {fileID: 6286941004720889063}
+  m_Layer: 3
   m_Name: Cube.060
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2837,7 +2842,8 @@ GameObject:
   - component: {fileID: 5932666498626574918}
   - component: {fileID: 4628347513039532168}
   - component: {fileID: 6721265926765187257}
-  m_Layer: 0
+  - component: {fileID: 6721265926765187258}
+  m_Layer: 3
   m_Name: Cube.064
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -2909,7 +2915,7 @@ GameObject:
   - component: {fileID: 2050809773698263325}
   - component: {fileID: 1079662025071563392}
   - component: {fileID: 2050809773698263326}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C2
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3078,7 +3084,8 @@ GameObject:
   - component: {fileID: 8331573711905040817}
   - component: {fileID: 7358938726586871063}
   - component: {fileID: 8331573711905040818}
-  m_Layer: 0
+  - component: {fileID: 8331573711905040819}
+  m_Layer: 3
   m_Name: Cube.058
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3120,7 +3127,8 @@ GameObject:
   - component: {fileID: 6749577034028397805}
   - component: {fileID: 6964462607422091476}
   - component: {fileID: 6964462607422091477}
-  m_Layer: 0
+  - component: {fileID: 6964462607422091478}
+  m_Layer: 3
   m_Name: Cube.072
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3245,7 +3253,8 @@ GameObject:
   - component: {fileID: 2470140410801640676}
   - component: {fileID: 245023241117728237}
   - component: {fileID: 2470140410801640677}
-  m_Layer: 0
+  - component: {fileID: 2470140410801640678}
+  m_Layer: 3
   m_Name: Platform 2
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3370,7 +3379,8 @@ GameObject:
   - component: {fileID: 3802202281648843096}
   - component: {fileID: 6395083535482145132}
   - component: {fileID: 6395083535482145133}
-  m_Layer: 0
+  - component: {fileID: 6395083535482145134}
+  m_Layer: 3
   m_Name: Cube.063
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3502,7 +3512,8 @@ GameObject:
   - component: {fileID: 4327454311048017681}
   - component: {fileID: 3468639199178015232}
   - component: {fileID: 5071954541382844998}
-  m_Layer: 0
+  - component: {fileID: 5071954541382844999}
+  m_Layer: 3
   m_Name: Cube.034
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3529,7 +3540,8 @@ GameObject:
   - component: {fileID: 5742636638536251407}
   - component: {fileID: 5646054418895574859}
   - component: {fileID: 5742636638536251408}
-  m_Layer: 0
+  - component: {fileID: 5742636638536251409}
+  m_Layer: 3
   m_Name: Platform 0
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3563,7 +3575,8 @@ GameObject:
   - component: {fileID: 9017783146488170304}
   - component: {fileID: 497116252665141644}
   - component: {fileID: 9017783146488170305}
-  m_Layer: 0
+  - component: {fileID: 9017783146488170306}
+  m_Layer: 3
   m_Name: Cube.048
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -3672,7 +3685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450653611469129}
   - component: {fileID: 216898601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (1)
   m_TagString: WallsController
   m_Icon: {fileID: 0}
@@ -3736,7 +3749,8 @@ GameObject:
   - component: {fileID: 1694610731281613980}
   - component: {fileID: 179516700084711925}
   - component: {fileID: 5909549192884929448}
-  m_Layer: 0
+  - component: {fileID: 5909549192884929449}
+  m_Layer: 3
   m_Name: Platform 6
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4171,7 +4185,8 @@ GameObject:
   - component: {fileID: 2366555104815535569}
   - component: {fileID: 4640121139593193686}
   - component: {fileID: 5342867201338278613}
-  m_Layer: 0
+  - component: {fileID: 5342867201338278614}
+  m_Layer: 3
   m_Name: Cube.067
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4250,7 +4265,8 @@ GameObject:
   - component: {fileID: 2261168351156693447}
   - component: {fileID: 4129304133298978734}
   - component: {fileID: 5210025417822445920}
-  m_Layer: 0
+  - component: {fileID: 5210025417822445921}
+  m_Layer: 3
   m_Name: Cube.077
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4420,7 +4436,8 @@ GameObject:
   - component: {fileID: 4581423034370105126}
   - component: {fileID: 1124569292454875089}
   - component: {fileID: 9134778265542612945}
-  m_Layer: 0
+  - component: {fileID: 9134778265542612946}
+  m_Layer: 3
   m_Name: Cube.076
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4439,7 +4456,8 @@ GameObject:
   - component: {fileID: 5386575051810838484}
   - component: {fileID: 327064008937450768}
   - component: {fileID: 5386575051810838485}
-  m_Layer: 0
+  - component: {fileID: 5386575051810838486}
+  m_Layer: 3
   m_Name: Cube.014
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4503,7 +4521,8 @@ GameObject:
   - component: {fileID: 877096781507216834}
   - component: {fileID: 4543239735307954031}
   - component: {fileID: 4543239735307954032}
-  m_Layer: 0
+  - component: {fileID: 4543239735307954033}
+  m_Layer: 3
   m_Name: Cube.089
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4582,7 +4601,8 @@ GameObject:
   - component: {fileID: 3418485910914753903}
   - component: {fileID: 976723959973707460}
   - component: {fileID: 3418485910914753904}
-  m_Layer: 0
+  - component: {fileID: 3418485910914753905}
+  m_Layer: 3
   m_Name: Cube.044
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4601,7 +4621,7 @@ GameObject:
   - component: {fileID: 8897240367445579288}
   - component: {fileID: 3129779573376823012}
   - component: {fileID: 8897240367445579289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C6
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4681,7 +4701,8 @@ GameObject:
   - component: {fileID: 3441275452967796476}
   - component: {fileID: 953134147127377895}
   - component: {fileID: 4524298505541976775}
-  m_Layer: 0
+  - component: {fileID: 4524298505541976776}
+  m_Layer: 3
   m_Name: Cube.024
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4776,7 +4797,8 @@ GameObject:
   - component: {fileID: 6900070842440341646}
   - component: {fileID: 7653977287488125691}
   - component: {fileID: 7653977287488125692}
-  m_Layer: 0
+  - component: {fileID: 7653977287488125693}
+  m_Layer: 3
   m_Name: Cube.070
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4840,7 +4862,8 @@ GameObject:
   - component: {fileID: 1195439189486312720}
   - component: {fileID: 1838182524249784192}
   - component: {fileID: 1838182524249784193}
-  m_Layer: 0
+  - component: {fileID: 1838182524249784194}
+  m_Layer: 3
   m_Name: Cube.051
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4859,7 +4882,8 @@ GameObject:
   - component: {fileID: 5109987460505471949}
   - component: {fileID: 895425838241006161}
   - component: {fileID: 5586477882724566975}
-  m_Layer: 0
+  - component: {fileID: 5586477882724566976}
+  m_Layer: 3
   m_Name: Cube.033
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -4927,6 +4951,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &1838182524249784194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827667731306384360}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!4 &1845986698562834307
 Transform:
   m_ObjectHideFlags: 0
@@ -5030,7 +5075,8 @@ GameObject:
   - component: {fileID: 1295866398036973523}
   - component: {fileID: 2355982399365962746}
   - component: {fileID: 2898394801653932388}
-  m_Layer: 0
+  - component: {fileID: 2898394801653932389}
+  m_Layer: 3
   m_Name: Cube.013
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5094,7 +5140,8 @@ GameObject:
   - component: {fileID: 7896021338636935762}
   - component: {fileID: 2821655904284492549}
   - component: {fileID: 7896021338636935763}
-  m_Layer: 0
+  - component: {fileID: 7896021338636935764}
+  m_Layer: 3
   m_Name: Cube.069
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5113,7 +5160,8 @@ GameObject:
   - component: {fileID: 6214807057049606332}
   - component: {fileID: 4127316761951238053}
   - component: {fileID: 7400858018994566220}
-  m_Layer: 0
+  - component: {fileID: 7400858018994566221}
+  m_Layer: 3
   m_Name: Cube.078
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5232,7 +5280,7 @@ GameObject:
   - component: {fileID: 8482381505271572873}
   - component: {fileID: 8418640414628308956}
   - component: {fileID: 8482381505271572874}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C7
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5463,7 +5511,8 @@ GameObject:
   - component: {fileID: 6089389933776172275}
   - component: {fileID: 3929435374674035160}
   - component: {fileID: 6089389933776172276}
-  m_Layer: 0
+  - component: {fileID: 6089389933776172277}
+  m_Layer: 3
   m_Name: Cube.053
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5527,7 +5576,8 @@ GameObject:
   - component: {fileID: 4668013534696112601}
   - component: {fileID: 8567717000991496640}
   - component: {fileID: 8567717000991496641}
-  m_Layer: 0
+  - component: {fileID: 8567717000991496642}
+  m_Layer: 3
   m_Name: Cube.010
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5558,6 +5608,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &2470140410801640678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524963176327880534}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0}
 --- !u!1 &2524215006618376466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5570,7 +5641,8 @@ GameObject:
   - component: {fileID: 2248683036311880917}
   - component: {fileID: 5610089356108315933}
   - component: {fileID: 6657668695744756842}
-  m_Layer: 0
+  - component: {fileID: 6657668695744756843}
+  m_Layer: 3
   m_Name: Cube.087
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5649,7 +5721,8 @@ GameObject:
   - component: {fileID: 6876059422368779187}
   - component: {fileID: 5384421884511642744}
   - component: {fileID: 8589026183842111906}
-  m_Layer: 0
+  - component: {fileID: 8589026183842111907}
+  m_Layer: 3
   m_Name: Cube.047
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5676,7 +5749,8 @@ GameObject:
   - component: {fileID: 7484953852590905315}
   - component: {fileID: 7864376728918679405}
   - component: {fileID: 8055915242652225030}
-  m_Layer: 0
+  - component: {fileID: 8055915242652225031}
+  m_Layer: 3
   m_Name: Platform 3
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -5931,13 +6005,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 690946786409631883, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690946786409631883, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690946786409631883, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2147038316910453772, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.22689
       objectReference: {fileID: 0}
     - target: {fileID: 2147038316910453772, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.16
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2147038316910453772, guid: 1e73f567676be2a44969087ce804bc21, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5992,7 +6078,7 @@ GameObject:
   - component: {fileID: 8774001824618783706}
   - component: {fileID: 7680149295741368186}
   - component: {fileID: 8774001824618783707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C9
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6030,6 +6116,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &2898394801653932389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951922370374176055}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0.0000000037252903}
 --- !u!23 &2927593092029066900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6156,7 +6263,8 @@ GameObject:
   - component: {fileID: 4372778185147092964}
   - component: {fileID: 79371104587617605}
   - component: {fileID: 7162482863943547471}
-  m_Layer: 0
+  - component: {fileID: 7162482863943547472}
+  m_Layer: 3
   m_Name: Platform 4
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6278,7 +6386,8 @@ GameObject:
   - component: {fileID: 662626206123992243}
   - component: {fileID: 1052254512627672453}
   - component: {fileID: 6658855197349407181}
-  m_Layer: 0
+  - component: {fileID: 6658855197349407182}
+  m_Layer: 3
   m_Name: Cube.088
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6357,7 +6466,8 @@ GameObject:
   - component: {fileID: 1728479365622670943}
   - component: {fileID: 8391255556568096409}
   - component: {fileID: 8391255556568096410}
-  m_Layer: 0
+  - component: {fileID: 8391255556568096411}
+  m_Layer: 3
   m_Name: Cube.066
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6494,6 +6604,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &3418485910914753905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574869080457948303}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!33 &3441275452967796476
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6514,7 +6645,8 @@ GameObject:
   - component: {fileID: 5898958501428606368}
   - component: {fileID: 1431928627936732934}
   - component: {fileID: 8542164415042520300}
-  m_Layer: 0
+  - component: {fileID: 8542164415042520301}
+  m_Layer: 3
   m_Name: Cube.025
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6578,7 +6710,8 @@ GameObject:
   - component: {fileID: 2928514860099346795}
   - component: {fileID: 6947464325723017468}
   - component: {fileID: 6947464325723017469}
-  m_Layer: 0
+  - component: {fileID: 6947464325723017470}
+  m_Layer: 3
   m_Name: Cube.029
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6628,7 +6761,8 @@ GameObject:
   - component: {fileID: 5816652059759393732}
   - component: {fileID: 4059279300916436397}
   - component: {fileID: 5816652059759393733}
-  m_Layer: 0
+  - component: {fileID: 5816652059759393734}
+  m_Layer: 3
   m_Name: Cube.057
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6645,7 +6779,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1580078594917762029, guid: caf5f50d51d4e4d479ebd91c826a4323, type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1580078594917762029, guid: caf5f50d51d4e4d479ebd91c826a4323, type: 3}
       propertyPath: bulletController
@@ -6720,7 +6854,8 @@ GameObject:
   - component: {fileID: 9081674080391625463}
   - component: {fileID: 7137442478813175961}
   - component: {fileID: 9081674080391625464}
-  m_Layer: 0
+  - component: {fileID: 9081674080391625465}
+  m_Layer: 3
   m_Name: Cube.073
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6739,7 +6874,8 @@ GameObject:
   - component: {fileID: 1079302431315193593}
   - component: {fileID: 5003168026939483330}
   - component: {fileID: 8796187630686582803}
-  m_Layer: 0
+  - component: {fileID: 8796187630686582804}
+  m_Layer: 3
   m_Name: Cube.062
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6894,7 +7030,8 @@ GameObject:
   - component: {fileID: 3517685579965001242}
   - component: {fileID: 1060481913037417129}
   - component: {fileID: 4032741954107234469}
-  m_Layer: 0
+  - component: {fileID: 4032741954107234470}
+  m_Layer: 3
   m_Name: Cube.079
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -6917,6 +7054,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &4032741954107234470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032741954107234468}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!23 &4059279300916436397
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6989,7 +7147,8 @@ GameObject:
   - component: {fileID: 4938768174860872804}
   - component: {fileID: 4876285997167889069}
   - component: {fileID: 4938768174860872805}
-  m_Layer: 0
+  - component: {fileID: 4938768174860872806}
+  m_Layer: 3
   m_Name: Cube.052
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7173,7 +7332,8 @@ GameObject:
   - component: {fileID: 8336391998303931120}
   - component: {fileID: 1809034822608146981}
   - component: {fileID: 8336391998303931121}
-  m_Layer: 0
+  - component: {fileID: 8336391998303931122}
+  m_Layer: 3
   m_Name: Cube.084
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7192,7 +7352,8 @@ GameObject:
   - component: {fileID: 8307813400852467305}
   - component: {fileID: 2128355837077783253}
   - component: {fileID: 8577611361504405295}
-  m_Layer: 0
+  - component: {fileID: 8577611361504405296}
+  m_Layer: 3
   m_Name: Cube.054
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7241,7 +7402,8 @@ GameObject:
   - component: {fileID: 6772912780785948538}
   - component: {fileID: 1914653232197543343}
   - component: {fileID: 6772912780785948539}
-  m_Layer: 0
+  - component: {fileID: 6772912780785948540}
+  m_Layer: 3
   m_Name: Cube.019
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7366,7 +7528,8 @@ GameObject:
   - component: {fileID: 2210192937937749227}
   - component: {fileID: 1738776581919004582}
   - component: {fileID: 4356877828993893619}
-  m_Layer: 0
+  - component: {fileID: 4356877828993893620}
+  m_Layer: 3
   m_Name: Cube.018
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7389,6 +7552,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &4356877828993893620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4356877828993893618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: 0, z: 0.0000000037252903}
 --- !u!33 &4372778185147092964
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7484,7 +7668,8 @@ GameObject:
   - component: {fileID: 8678946765121326133}
   - component: {fileID: 6275833175648373077}
   - component: {fileID: 8906773798998134390}
-  m_Layer: 0
+  - component: {fileID: 8906773798998134391}
+  m_Layer: 3
   m_Name: Cube.020
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7522,6 +7707,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &4524298505541976776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707942935596728512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000018626451, z: 0}
 --- !u!23 &4543239735307954031
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7583,6 +7789,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &4543239735307954033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527728762898813091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!33 &4581423034370105126
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7860,7 +8087,8 @@ GameObject:
   - component: {fileID: 1925013906176382061}
   - component: {fileID: 6538895236885473201}
   - component: {fileID: 7482954142821699254}
-  m_Layer: 0
+  - component: {fileID: 7482954142821699255}
+  m_Layer: 3
   m_Name: Platform 5
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -7891,6 +8119,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &4938768174860872806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4103881766376484362}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!23 &5003168026939483330
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8020,6 +8269,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5071954541382844999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671717966434621797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!1001 &5072750122663615611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8161,7 +8431,7 @@ GameObject:
   - component: {fileID: 6232573140301473866}
   - component: {fileID: 2056398763985210553}
   - component: {fileID: 6232573140301473867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C10
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8180,7 +8450,8 @@ GameObject:
   - component: {fileID: 5640423264258913242}
   - component: {fileID: 5425505346960423019}
   - component: {fileID: 5640423264258913243}
-  m_Layer: 0
+  - component: {fileID: 5640423264258913244}
+  m_Layer: 3
   m_Name: Cube.041
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8222,7 +8493,8 @@ GameObject:
   - component: {fileID: 6646400850595895568}
   - component: {fileID: 7152520436173279156}
   - component: {fileID: 7152520436173279157}
-  m_Layer: 0
+  - component: {fileID: 7152520436173279158}
+  m_Layer: 3
   m_Name: Cube.059
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8241,7 +8513,8 @@ GameObject:
   - component: {fileID: 5033075959241158256}
   - component: {fileID: 1957819986723254455}
   - component: {fileID: 5194334309690923960}
-  m_Layer: 0
+  - component: {fileID: 5194334309690923961}
+  m_Layer: 3
   m_Name: Cube.055
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8264,6 +8537,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5194334309690923961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194334309690923959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000037252903, z: 0}
 --- !u!4 &5210025417822445919
 Transform:
   m_ObjectHideFlags: 0
@@ -8295,6 +8589,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5210025417822445921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292043252854238896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &5252682845964274362
 GameObject:
   m_ObjectHideFlags: 0
@@ -8307,7 +8622,8 @@ GameObject:
   - component: {fileID: 2001263134141080910}
   - component: {fileID: 3859947754936165854}
   - component: {fileID: 5252682845964274363}
-  m_Layer: 0
+  - component: {fileID: 5252682845964274364}
+  m_Layer: 3
   m_Name: Cube.016
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8330,6 +8646,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5252682845964274364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252682845964274362}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: 0, z: 0.0000000037252903}
 --- !u!4 &5280273934030311377
 Transform:
   m_ObjectHideFlags: 0
@@ -8357,7 +8694,8 @@ GameObject:
   - component: {fileID: 6179951801004595653}
   - component: {fileID: 4106205127035382645}
   - component: {fileID: 6179951801004595654}
-  m_Layer: 0
+  - component: {fileID: 6179951801004595655}
+  m_Layer: 3
   m_Name: Cube.086
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8410,6 +8748,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5342867201338278614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204343365115459145}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!23 &5366800995206360206
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8547,6 +8906,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5386575051810838486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502877291763556333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: 0, z: 0.0000000037252903}
 --- !u!23 &5425505346960423019
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8604,7 +8984,8 @@ GameObject:
   - component: {fileID: 2040280107454170473}
   - component: {fileID: 5008022236098368635}
   - component: {fileID: 6490625522610955405}
-  m_Layer: 0
+  - component: {fileID: 6490625522610955406}
+  m_Layer: 3
   m_Name: Cube.021
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8642,6 +9023,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5586477882724566976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835210009730165173}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!23 &5610089356108315933
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8726,6 +9128,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5640423264258913244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5089668104586598003}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!23 &5646054418895574859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8798,7 +9221,8 @@ GameObject:
   - component: {fileID: 9170846852793824956}
   - component: {fileID: 355894166727971068}
   - component: {fileID: 9170846852793824957}
-  m_Layer: 0
+  - component: {fileID: 9170846852793824958}
+  m_Layer: 3
   m_Name: Cube.030
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8829,6 +9253,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5742636638536251409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700753735537559921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: 0, z: 0}
 --- !u!1 &5813186243372918009
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,7 +9286,8 @@ GameObject:
   - component: {fileID: 5383179511554200177}
   - component: {fileID: 8616184511058733864}
   - component: {fileID: 8616184511058733865}
-  m_Layer: 0
+  - component: {fileID: 8616184511058733866}
+  m_Layer: 3
   m_Name: Cube.028
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -8872,6 +9318,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5816652059759393734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559817854590349719}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!4 &5830686056623900209
 Transform:
   m_ObjectHideFlags: 0
@@ -8934,6 +9401,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &5909549192884929449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951112559490445855}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &5932666498626574918
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8984,7 +9472,8 @@ GameObject:
   - component: {fileID: 1048724835140558766}
   - component: {fileID: 4432071487286453880}
   - component: {fileID: 6014503084555280100}
-  m_Layer: 0
+  - component: {fileID: 6014503084555280101}
+  m_Layer: 3
   m_Name: Cube.015
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9007,6 +9496,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6014503084555280101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6014503084555280099}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: 0, z: 0.0000000037252903}
 --- !u!23 &6027543245694505814
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9109,7 +9619,8 @@ GameObject:
   - component: {fileID: 1419733831297789748}
   - component: {fileID: 9148064449375335197}
   - component: {fileID: 9148064449375335198}
-  m_Layer: 0
+  - component: {fileID: 9148064449375335199}
+  m_Layer: 3
   m_Name: Platform 1
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9128,7 +9639,8 @@ GameObject:
   - component: {fileID: 789173350663168908}
   - component: {fileID: 2549569356189572107}
   - component: {fileID: 6085649864343083681}
-  m_Layer: 0
+  - component: {fileID: 6085649864343083682}
+  m_Layer: 3
   m_Name: Cube.037
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9151,6 +9663,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6085649864343083682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085649864343083680}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!33 &6089389933776172275
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9175,6 +9708,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6089389933776172277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430482054902266782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!33 &6094484959167260246
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9255,7 +9809,8 @@ GameObject:
   - component: {fileID: 775332716759897717}
   - component: {fileID: 6633947738586245437}
   - component: {fileID: 6633947738586245438}
-  m_Layer: 0
+  - component: {fileID: 6633947738586245439}
+  m_Layer: 3
   m_Name: Cube.085
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9286,6 +9841,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6179951801004595655
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5303575148846722992}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000037252903, z: 0}
 --- !u!33 &6214807057049606332
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9330,7 +9906,8 @@ GameObject:
   - component: {fileID: 3517951207727304059}
   - component: {fileID: 1512191506729690798}
   - component: {fileID: 6248574976580426599}
-  m_Layer: 0
+  - component: {fileID: 6248574976580426600}
+  m_Layer: 3
   m_Name: Cube.039
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9353,6 +9930,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6248574976580426600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6248574976580426598}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!23 &6272350532131657999
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9519,6 +10117,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6286941004720889063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152955310417887849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!23 &6294062970159631279
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9576,7 +10195,8 @@ GameObject:
   - component: {fileID: 1723629720783819642}
   - component: {fileID: 5366800995206360206}
   - component: {fileID: 6348606209807195097}
-  m_Layer: 0
+  - component: {fileID: 6348606209807195098}
+  m_Layer: 3
   m_Name: Cube.031
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9599,6 +10219,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6348606209807195098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6348606209807195096}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!23 &6395083535482145132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9660,6 +10301,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6395083535482145134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585220624120510479}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!1 &6458859407158488270
 GameObject:
   m_ObjectHideFlags: 0
@@ -9672,7 +10334,8 @@ GameObject:
   - component: {fileID: 475926140145853560}
   - component: {fileID: 466608246786423925}
   - component: {fileID: 6461109677751102474}
-  m_Layer: 0
+  - component: {fileID: 6461109677751102475}
+  m_Layer: 3
   m_Name: Cube.022
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9710,6 +10373,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6461109677751102475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6458859407158488270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!33 &6464393432725190365
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9749,6 +10433,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6490625522610955406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5444727772348533974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!23 &6538895236885473201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9870,6 +10575,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6633947738586245439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140994139674598368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000037252903, z: 0}
 --- !u!33 &6646400850595895568
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9909,6 +10635,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6657668695744756843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524215006618376466}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!4 &6658855197349407180
 Transform:
   m_ObjectHideFlags: 0
@@ -9940,6 +10687,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6658855197349407182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3123005921603836692}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000037252903, z: 0}
 --- !u!1 &6704279676537172825
 GameObject:
   m_ObjectHideFlags: 0
@@ -9952,7 +10720,8 @@ GameObject:
   - component: {fileID: 9155275840737970568}
   - component: {fileID: 6749947461753677968}
   - component: {fileID: 9155275840737970569}
-  m_Layer: 0
+  - component: {fileID: 9155275840737970570}
+  m_Layer: 3
   m_Name: Cube.036
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -9990,6 +10759,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6721265926765187258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182104280387811268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000018626451, z: 0}
 --- !u!23 &6745302439221528941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10112,6 +10902,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6772912780785948540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4316533147070893227}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: 0, z: 0.0000000037252903}
 --- !u!4 &6830945432499383141
 Transform:
   m_ObjectHideFlags: 0
@@ -10139,7 +10950,8 @@ GameObject:
   - component: {fileID: 7013723230583252626}
   - component: {fileID: 6052149032714095537}
   - component: {fileID: 7013723230583252627}
-  m_Layer: 0
+  - component: {fileID: 7013723230583252628}
+  m_Layer: 3
   m_Name: Cube.083
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10185,6 +10997,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6876804342427148241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20047646401886037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!33 &6900070842440341646
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10269,6 +11102,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6947464325723017470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469311691294316311}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!1 &6960264071117704716
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,7 +11135,8 @@ GameObject:
   - component: {fileID: 3209288034787741477}
   - component: {fileID: 8249684995325664899}
   - component: {fileID: 8249684995325664900}
-  m_Layer: 0
+  - component: {fileID: 8249684995325664901}
+  m_Layer: 3
   m_Name: Platform 9
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10349,6 +11204,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &6964462607422091478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401122468389485357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &6972127845093502609
 GameObject:
   m_ObjectHideFlags: 0
@@ -10361,7 +11237,8 @@ GameObject:
   - component: {fileID: 7250595021639426072}
   - component: {fileID: 2726731778771557098}
   - component: {fileID: 7250595021639426073}
-  m_Layer: 0
+  - component: {fileID: 7250595021639426074}
+  m_Layer: 3
   m_Name: Cube.075
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10392,6 +11269,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7013723230583252628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850524675883919478}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!1 &7041628270121151103
 GameObject:
   m_ObjectHideFlags: 0
@@ -10404,7 +11302,8 @@ GameObject:
   - component: {fileID: 4870004671253761654}
   - component: {fileID: 1442450553404006351}
   - component: {fileID: 7041628270121151104}
-  m_Layer: 0
+  - component: {fileID: 7041628270121151105}
+  m_Layer: 3
   m_Name: Cube.017
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10427,6 +11326,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7041628270121151105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041628270121151103}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0.0000000037252903}
 --- !u!1 &7045030354214194544
 GameObject:
   m_ObjectHideFlags: 0
@@ -10439,7 +11359,8 @@ GameObject:
   - component: {fileID: 6464393432725190365}
   - component: {fileID: 7841272781321974205}
   - component: {fileID: 7841272781321974206}
-  m_Layer: 0
+  - component: {fileID: 7841272781321974207}
+  m_Layer: 3
   m_Name: Cube.049
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10458,7 +11379,8 @@ GameObject:
   - component: {fileID: 2603240574743478803}
   - component: {fileID: 137163845943826603}
   - component: {fileID: 7100907181829155828}
-  m_Layer: 0
+  - component: {fileID: 7100907181829155829}
+  m_Layer: 3
   m_Name: Cube.080
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10481,6 +11403,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7100907181829155829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100907181829155827}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!1 &7103153012912325576
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,7 +11436,8 @@ GameObject:
   - component: {fileID: 370415572266635381}
   - component: {fileID: 2927593092029066900}
   - component: {fileID: 7103153012912325577}
-  m_Layer: 0
+  - component: {fileID: 7103153012912325578}
+  m_Layer: 3
   m_Name: Cube.038
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10516,6 +11460,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7103153012912325578
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103153012912325576}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!4 &7129599249429937507
 Transform:
   m_ObjectHideFlags: 0
@@ -10588,7 +11553,8 @@ GameObject:
   - component: {fileID: 677407277285151554}
   - component: {fileID: 2816831734746449211}
   - component: {fileID: 7152111983501626300}
-  m_Layer: 0
+  - component: {fileID: 7152111983501626301}
+  m_Layer: 3
   m_Name: Cube.074
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10611,6 +11577,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7152111983501626301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7152111983501626299}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!23 &7152520436173279156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10672,6 +11659,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7152520436173279158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164492610921474570}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!4 &7162482863943547470
 Transform:
   m_ObjectHideFlags: 0
@@ -10703,6 +11711,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7162482863943547472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3013194921938271031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: 0, z: 0}
 --- !u!1 &7178114113410696074
 GameObject:
   m_ObjectHideFlags: 0
@@ -10715,7 +11744,7 @@ GameObject:
   - component: {fileID: 215592839096879709}
   - component: {fileID: 1558643248459777423}
   - component: {fileID: 7178114113410696075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C1
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10750,7 +11779,8 @@ GameObject:
   - component: {fileID: 4348440454287805597}
   - component: {fileID: 8628502785639524409}
   - component: {fileID: 8628502785639524410}
-  m_Layer: 0
+  - component: {fileID: 8628502785639524411}
+  m_Layer: 3
   m_Name: Cube.023
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10777,7 +11807,8 @@ GameObject:
   - component: {fileID: 1147230179269751727}
   - component: {fileID: 6126031748306529866}
   - component: {fileID: 7199088262221672010}
-  m_Layer: 0
+  - component: {fileID: 7199088262221672011}
+  m_Layer: 3
   m_Name: Cube.068
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10800,6 +11831,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7199088262221672011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199088262221672009}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0}
 --- !u!33 &7250595021639426072
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10824,6 +11876,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7250595021639426074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6972127845093502609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &7331741613538566163
 GameObject:
   m_ObjectHideFlags: 0
@@ -10836,7 +11909,8 @@ GameObject:
   - component: {fileID: 7536177112507112306}
   - component: {fileID: 945454400196812234}
   - component: {fileID: 7536177112507112307}
-  m_Layer: 0
+  - component: {fileID: 7536177112507112308}
+  m_Layer: 3
   m_Name: Cube.040
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10855,7 +11929,8 @@ GameObject:
   - component: {fileID: 3901834440997302308}
   - component: {fileID: 6272350532131657999}
   - component: {fileID: 7333631254821131249}
-  m_Layer: 0
+  - component: {fileID: 7333631254821131250}
+  m_Layer: 3
   m_Name: Cube.042
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10878,6 +11953,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7333631254821131250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7333631254821131248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!23 &7358938726586871063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10935,7 +12031,8 @@ GameObject:
   - component: {fileID: 777982543227307088}
   - component: {fileID: 7725258897315452481}
   - component: {fileID: 8934385354441745996}
-  m_Layer: 0
+  - component: {fileID: 8934385354441745997}
+  m_Layer: 3
   m_Name: Cube.082
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -10973,6 +12070,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7400858018994566221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998131547209581297}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!23 &7416691523835447057
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11049,6 +12167,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7482954142821699255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905831959569069596}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: 0, z: 0}
 --- !u!33 &7484953852590905315
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11081,6 +12220,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7536177112507112308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331741613538566163}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!33 &7606442907345721928
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11146,7 +12306,7 @@ GameObject:
   - component: {fileID: 8401952774787244000}
   - component: {fileID: 7416691523835447057}
   - component: {fileID: 8401952774787244001}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C5
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -11214,6 +12374,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7653977287488125693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801220214224262930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &7664650469129430445
 GameObject:
   m_ObjectHideFlags: 0
@@ -11226,7 +12407,8 @@ GameObject:
   - component: {fileID: 8542036706259939686}
   - component: {fileID: 3251961985346136422}
   - component: {fileID: 8542036706259939687}
-  m_Layer: 0
+  - component: {fileID: 8542036706259939688}
+  m_Layer: 3
   m_Name: Cube.035
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -11399,6 +12581,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7841272781321974207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7045030354214194544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!23 &7864376728918679405
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11468,6 +12671,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7896021338636935764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980921582977724896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!1 &7917349904573763990
 GameObject:
   m_ObjectHideFlags: 0
@@ -11480,7 +12704,8 @@ GameObject:
   - component: {fileID: 1075669132563010169}
   - component: {fileID: 6294062970159631279}
   - component: {fileID: 7917349904573763991}
-  m_Layer: 0
+  - component: {fileID: 7917349904573763992}
+  m_Layer: 3
   m_Name: Cube.046
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -11503,6 +12728,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &7917349904573763992
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7917349904573763990}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!4 &7942816438717965265
 Transform:
   m_ObjectHideFlags: 0
@@ -11545,7 +12791,8 @@ GameObject:
   - component: {fileID: 420694216472427333}
   - component: {fileID: 1595097081993740895}
   - component: {fileID: 8494251016230394984}
-  m_Layer: 0
+  - component: {fileID: 8494251016230394985}
+  m_Layer: 3
   m_Name: Cube.050
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -11564,7 +12811,8 @@ GameObject:
   - component: {fileID: 7606442907345721928}
   - component: {fileID: 4321514657290467879}
   - component: {fileID: 8009987137869806697}
-  m_Layer: 0
+  - component: {fileID: 8009987137869806698}
+  m_Layer: 3
   m_Name: Cube.011
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -11587,6 +12835,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8009987137869806698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8009987137869806696}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: 0, z: 0.0000000037252903}
 --- !u!4 &8055915242652225029
 Transform:
   m_ObjectHideFlags: 0
@@ -11618,6 +12887,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8055915242652225031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657294529335612879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0}
 --- !u!23 &8102382928180121881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11724,6 +13014,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8249684995325664901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6960264071117704716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000037252903, y: 0, z: 0}
 --- !u!33 &8307813400852467305
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11756,6 +13067,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8331573711905040819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366455553980836109}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000037252903, z: 0}
 --- !u!33 &8336391998303931120
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11780,6 +13112,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8336391998303931122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252702714172477227}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000037252903, z: 0}
 --- !u!4 &8364049461447125657
 Transform:
   m_ObjectHideFlags: 0
@@ -11856,6 +13209,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8391255556568096411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3197367263892011721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0}
 --- !u!33 &8401952774787244000
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11892,7 +13266,7 @@ GameObject:
   - component: {fileID: 3010172806968779122}
   - component: {fileID: 8544783548493113711}
   - component: {fileID: 8544783548493113712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C8
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12040,7 +13414,8 @@ GameObject:
   - component: {fileID: 3404236367899766264}
   - component: {fileID: 6027543245694505814}
   - component: {fileID: 8485173161960745179}
-  m_Layer: 0
+  - component: {fileID: 8485173161960745180}
+  m_Layer: 3
   m_Name: Cube.012
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12063,6 +13438,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8485173161960745180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485173161960745178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0.0000000037252903}
 --- !u!4 &8494251016230394983
 Transform:
   m_ObjectHideFlags: 0
@@ -12094,6 +13490,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8494251016230394985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7975042476030002510}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!33 &8542036706259939686
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12118,6 +13535,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8542036706259939688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664650469129430445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!4 &8542164415042520299
 Transform:
   m_ObjectHideFlags: 0
@@ -12149,6 +13587,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8542164415042520301
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3455292422175591392}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000018626451, z: 0}
 --- !u!23 &8544783548493113711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12234,6 +13693,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8554778848473645860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31466104181899424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: 0, z: 0}
 --- !u!23 &8567717000991496640
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12295,6 +13775,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8567717000991496642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2459513672088405574}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: 0, z: 0.0000000037252903}
 --- !u!1 &8571162130833950595
 GameObject:
   m_ObjectHideFlags: 0
@@ -12307,7 +13808,8 @@ GameObject:
   - component: {fileID: 6094484959167260246}
   - component: {fileID: 8436230607497959293}
   - component: {fileID: 8571162130833950596}
-  m_Layer: 0
+  - component: {fileID: 8571162130833950597}
+  m_Layer: 3
   m_Name: Cube.043
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12330,6 +13832,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8571162130833950597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8571162130833950595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!4 &8577611361504405294
 Transform:
   m_ObjectHideFlags: 0
@@ -12361,6 +13884,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8577611361504405296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262787526622726095}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000013969839, y: -0.0000000037252903, z: 0}
 --- !u!1 &8578709097402591333
 GameObject:
   m_ObjectHideFlags: 0
@@ -12373,7 +13917,8 @@ GameObject:
   - component: {fileID: 4780790647122050735}
   - component: {fileID: 7621133391882553490}
   - component: {fileID: 8578709097402591334}
-  m_Layer: 0
+  - component: {fileID: 8578709097402591335}
+  m_Layer: 3
   m_Name: Cube.032
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12396,6 +13941,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8578709097402591335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578709097402591333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!4 &8589026183842111905
 Transform:
   m_ObjectHideFlags: 0
@@ -12427,6 +13993,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8589026183842111907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596957926158872216}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!23 &8616184511058733864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12488,6 +14075,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8616184511058733866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5813186243372918009}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0}
 --- !u!23 &8628502785639524409
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12549,6 +14157,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8628502785639524411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183117986043611174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!33 &8678946765121326133
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12569,7 +14198,7 @@ GameObject:
   - component: {fileID: 8894691112955670944}
   - component: {fileID: 6745302439221528941}
   - component: {fileID: 8894691112955670945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C4
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12631,6 +14260,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8796187630686582804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3654328044433048718}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!23 &8839853226048632300
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12692,6 +14342,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8839853226048632302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26844662633149675}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!4 &8840325784393109749
 Transform:
   m_ObjectHideFlags: 0
@@ -12723,6 +14394,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8840325784393109751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37364540712666778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000037252903, z: 0}
 --- !u!1 &8869669039360880732
 GameObject:
   m_ObjectHideFlags: 0
@@ -12735,7 +14427,8 @@ GameObject:
   - component: {fileID: 992621563394282890}
   - component: {fileID: 4349925143305587328}
   - component: {fileID: 9213472316019189043}
-  m_Layer: 0
+  - component: {fileID: 9213472316019189044}
+  m_Layer: 3
   m_Name: Cube.071
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12821,6 +14514,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8906773798998134391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504409719365729661}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0}
 --- !u!4 &8934385354441745995
 Transform:
   m_ObjectHideFlags: 0
@@ -12852,6 +14566,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &8934385354441745997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7361767071415602473}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000037252903, z: 0}
 --- !u!1 &9014776604944362801
 GameObject:
   m_ObjectHideFlags: 0
@@ -12864,7 +14599,7 @@ GameObject:
   - component: {fileID: 1703912659456476235}
   - component: {fileID: 8102382928180121881}
   - component: {fileID: 9014776604944362802}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C3
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12899,7 +14634,8 @@ GameObject:
   - component: {fileID: 4902934333021027882}
   - component: {fileID: 1099556530376845928}
   - component: {fileID: 9017328541893620032}
-  m_Layer: 0
+  - component: {fileID: 9017328541893620033}
+  m_Layer: 3
   m_Name: Cube.056
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -12922,6 +14658,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9017328541893620033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017328541893620031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000037252903, z: 0}
 --- !u!33 &9017783146488170304
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12946,6 +14703,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9017783146488170306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767643756210034594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000027939677, z: 0.0000000037252903}
 --- !u!33 &9081674080391625463
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12970,6 +14748,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9081674080391625465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566207899930274566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!4 &9134778265542612944
 Transform:
   m_ObjectHideFlags: 0
@@ -13001,6 +14800,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9134778265542612946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454576027435083852}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &9141816029798146484
 GameObject:
   m_ObjectHideFlags: 0
@@ -13013,7 +14833,8 @@ GameObject:
   - component: {fileID: 19156296939856528}
   - component: {fileID: 649251792366103049}
   - component: {fileID: 9141816029798146485}
-  m_Layer: 0
+  - component: {fileID: 9141816029798146486}
+  m_Layer: 3
   m_Name: Cube.026
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -13036,6 +14857,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9141816029798146486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141816029798146484}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0}
 --- !u!23 &9148064449375335197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13097,6 +14939,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9148064449375335199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6063303224593073040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: 0, z: 0}
 --- !u!33 &9155275840737970568
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13121,6 +14984,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9155275840737970570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704279676537172825}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!1 &9158743094206779687
 GameObject:
   m_ObjectHideFlags: 0
@@ -13133,7 +15017,8 @@ GameObject:
   - component: {fileID: 1922597697378706981}
   - component: {fileID: 2733319493335766028}
   - component: {fileID: 9158743094206779688}
-  m_Layer: 0
+  - component: {fileID: 9158743094206779689}
+  m_Layer: 3
   m_Name: Cube.065
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -13156,6 +15041,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9158743094206779689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9158743094206779687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: -0.0000000013969839, y: -0.0000000018626451, z: 0}
 --- !u!1001 &9160953163331593525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13180,6 +15086,10 @@ PrefabInstance:
       propertyPath: 'bulletPrefabList.Array.data[2]'
       value: 
       objectReference: {fileID: 2944576728798232045, guid: 6aa7d04b1a1fdf43d86c1c4c0274bfa8, type: 3}
+    - target: {fileID: 822237747663858356, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d44a022f07f47244b84c541736c6c1a, type: 2}
     - target: {fileID: 2040878587540331538, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
       propertyPath: m_Name
       value: 'GunWall '
@@ -13218,7 +15128,7 @@ PrefabInstance:
       objectReference: {fileID: 2944576728798232045, guid: 6aa7d04b1a1fdf43d86c1c4c0274bfa8, type: 3}
     - target: {fileID: 5094942923224837430, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -3.494
       objectReference: {fileID: 0}
     - target: {fileID: 5094942923224837430, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13255,6 +15165,22 @@ PrefabInstance:
     - target: {fileID: 5094942923224837430, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095991287884500135, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
+      propertyPath: m_Size.z
+      value: 0.43316814
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095991287884500135, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
+      propertyPath: m_Center.z
+      value: -0.093835674
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102017558160568610, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102017558160568610, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 8078505089718564831, guid: 13d385cf4fa81bd48b11eacaadaf40bd, type: 3}
       propertyPath: bulletPrefabList.Array.size
@@ -13328,6 +15254,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9170846852793824958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5682876610361205256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.0000000018626451, z: 0.0000000037252903}
 --- !u!4 &9213472316019189042
 Transform:
   m_ObjectHideFlags: 0
@@ -13359,6 +15306,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9213472316019189044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869669039360880732}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000037252903, y: -0.000000007450581, z: 0.0000000037252903}
 --- !u!1 &9217234437627357390
 GameObject:
   m_ObjectHideFlags: 0
@@ -13371,7 +15339,8 @@ GameObject:
   - component: {fileID: 2989901908061994491}
   - component: {fileID: 2380718651231091826}
   - component: {fileID: 9217234437627357391}
-  m_Layer: 0
+  - component: {fileID: 9217234437627357392}
+  m_Layer: 3
   m_Name: Cube.027
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -13394,6 +15363,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9217234437627357392
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9217234437627357390}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0.0000000018626451, y: -0.0000000018626451, z: 0}
 --- !u!1 &9222354344054794890
 GameObject:
   m_ObjectHideFlags: 0
@@ -13406,7 +15396,8 @@ GameObject:
   - component: {fileID: 1016435397820708197}
   - component: {fileID: 2690815388867225943}
   - component: {fileID: 9222354344054794891}
-  m_Layer: 0
+  - component: {fileID: 9222354344054794892}
+  m_Layer: 3
   m_Name: Platform 8
   m_TagString: TerrainPillar
   m_Icon: {fileID: 0}
@@ -13429,6 +15420,27 @@ MonoBehaviour:
   baseHeight: 0
   speed: 1
   amplitude: 30
+--- !u!65 &9222354344054794892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9222354344054794890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.010000001, z: 0.10000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

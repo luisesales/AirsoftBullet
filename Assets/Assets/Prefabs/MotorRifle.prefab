@@ -78,7 +78,7 @@ MonoBehaviour:
   ammoCount: 80
   magazineAmount: 3
   gunHolder: {fileID: 0}
-  heatTimer: 1.5
+  heatTimer: 0.75
   maxFireRateMutiplier: 3
 --- !u!1 &2680820625503382607
 GameObject:
@@ -502,7 +502,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6be17b383de920f4a8581839548b7454, type: 2}
+  - {fileID: 2100000, guid: 1d44a022f07f47244b84c541736c6c1a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,22 +24,19 @@ public class PerlinNoiseGenerator : MonoBehaviour
     {
         noiseMap = new float[width,height];
         renderer = GetComponent<Renderer>();
-        // row_walls = new GameObject[10];
-        for (int i = 0; i < 10; i++)
-        {
-            
-        }
+        // row_walls = new GameObject[10];     
     }
 
     void Update()
     {
         renderer.material.mainTexture = TextureGenerator();
+        offsetX += MathF.Sin(Time.deltaTime * 0.1f);
+        offsetY += MathF.Cos(Time.deltaTime * 0.1f);
     }
 
     Texture2D TextureGenerator()
     {
-        Texture2D texture = new Texture2D(width, height);
-
+        Texture2D texture = new Texture2D(width, height);        
         for(int i = 0; i < width; i++)
         {
             for(int j = 0; j < height; j++)
