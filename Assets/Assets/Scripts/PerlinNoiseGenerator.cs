@@ -30,8 +30,8 @@ public class PerlinNoiseGenerator : MonoBehaviour
     void Update()
     {
         renderer.material.mainTexture = TextureGenerator();
-        offsetX += MathF.Sin(Time.deltaTime * 0.1f);
-        offsetY += MathF.Cos(Time.deltaTime * 0.1f);
+        //offsetX += MathF.Sin(Time.deltaTime * 0.1f);
+        //offsetY += MathF.Cos(Time.deltaTime * 0.1f);
     }
 
     Texture2D TextureGenerator()
